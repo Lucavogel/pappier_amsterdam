@@ -1,0 +1,197 @@
+%Version 3.1 December 2024
+% StretchBot: Neuro-Symbolic Planning for Adaptive Assistive Robot Guidance
+% Springer Nature Journal Submission
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[pdflatex,sn-basic,Numbered,iicol,twocolumn]{sn-jnl}% KI/Springer layout with numbered citations and two-column formatting
+
+\usepackage{graphicx}%
+\usepackage{amsmath,amssymb,amsfonts}%
+\usepackage{amsthm}%
+\usepackage{mathrsfs}%
+\usepackage[title]{appendix}%
+\usepackage{xcolor}%
+\usepackage{textcomp}%
+\usepackage{booktabs}%
+
+\raggedbottom
+
+\begin{document}
+
+\title[StretchBot: Neuro-Symbolic Planning for Adaptive Assistive Robot Guidance]{StretchBot: Neuro-Symbolic Planning for Adaptive Assistive Robot Guidance}
+
+\author*[1]{\fnm{Luca} \sur{Vogelgesang}}\email{l.vogelgesang@vu.nl}
+
+\author[1]{\fnm{Mehdi} \sur{Alvi}}\email{m.alvi@vu.nl}
+
+\author[1]{\fnm{Xinrui} \sur{Zu}}\email{x.zu@vu.nl}
+
+\author[1]{\fnm{Stefano} \sur{De Giorgis}}\email{s.degiorgis@vu.nl}
+
+\author[1]{\fnm{Mohammadhossein} \sur{Khojasteh}}\email{m.khojasteh@vu.nl}
+
+\author[1]{\fnm{Filip} \sur{Ilievski}}\email{f.ilievski@vu.nl}
+
+\affil*[1]{\orgdiv{Faculty of Science, Department of Computer Science}, \orgname{Vrije Universiteit Amsterdam}, \orgaddress{\street{De Boelelaan 1081a}, \city{Amsterdam}, \postcode{1081 HV}, \country{Netherlands}}}
+
+\abstract{
+Assistive robots used in home and health settings need to adapt to user state and environmental context while preserving safe and coherent behavior. We present StretchBot, a neuro-symbolic coaching system for guided stretching routines. The method combines structured knowledge representation with large language models and multimodal perception, including object detection, facial and vocal affect cues, posture monitoring, and speech transcription. Perception outputs are fused into a contextual state that is enriched with knowledge graph relations and then used for adaptive action selection. A verification stage checks response format and interaction tone before execution, and the handler maps validated outputs to robot actions such as progressing to the next exercise or pointing to a relevant object. We report a pilot proof-of-concept evaluation with three participants comparing scripted and adaptive conditions. Descriptive results indicate higher perceived adaptability and object relevance in the adaptive condition, while scripted interaction remains competitive for smoothness and predictability. These findings support the practical value of actionable knowledge representation for grounding learned reasoning into embodied robot behavior, and they motivate larger studies to evaluate generalizability and long-term user outcomes.
+}
+
+\keywords{Neuro-Symbolic AI, Large Language Models, Knowledge Graphs, Assistive Robotics, Adaptive Planning, Human-Robot Interaction}
+
+\maketitle
+
+% Include all chapter files
+\input{../chapters/01_introduction.tex}
+\input{../chapters/02_related_work.tex}
+\input{../chapters/03_architecture.tex}
+\input{../chapters/04_implementation.tex}
+\input{../chapters/05_evaluation.tex}
+\input{../chapters/06_results.tex}
+\input{../chapters/07_discussion.tex}
+\input{../chapters/08_conclusion.tex}
+
+\section*{Acknowledgments}
+
+We thank all study participants for their time and feedback. We acknowledge support from the Vrije Universiteit Amsterdam and the Master's program in IRobotics at the University of Montpellier. Special thanks to the discussion group members (Xinrui Zu, Stefano De Giorgis, Mohammadhossein Khojasteh) for valuable feedback throughout development.
+
+\section*{Statements and Declarations}
+
+\subsubsection*{Funding} No external funding was received for this research beyond standard university support.
+
+\subsubsection*{Competing Interests} The authors have no relevant financial or non-financial interests to disclose.
+
+\subsubsection*{Data and Code Availability} Code and datasets for this project are available upon request. We are committed to sharing our research artifacts to support reproducibility and future work in neuro-symbolic robotics. Interested parties should contact the corresponding author.
+
+\begin{thebibliography}{99}
+
+\bibitem{ref1}
+Tapus, A., Mataric, M. J., ``Socially assistive robotics,'' \textit{IEEE Robotics \& Automation Magazine}, vol.~14, no.~1, pp.~42--49, 2007.
+
+\bibitem{ref2}
+Broadbent, E., Stafford, R., MacDonald, B., ``Acceptance of healthcare robots for the older population,'' \textit{Health Technology}, vol.~2, no.~1, pp.~1--13, 2012.
+
+\bibitem{ref3}
+Robins, B., Amirabdollahian, F., Dautenhahn, K., et al., ``Therapeutic robot for managing emotional externalizing behaviors in children with autism,'' \textit{International Conference on Social Robotics}, pp.~143--152, 2012.
+
+\bibitem{ref4}
+Aceituno-Valenzuela, L., Nuñez-Marcos, A., García-Zapirain, B., ``Robotic coaches for physical exercise: A systematic review,'' \textit{Journal of Ambient Intelligence and Humanized Computing}, vol.~11, no.~8, pp.~3277--3290, 2020.
+
+\bibitem{ref5}
+Speer, R., Chin, J., Havasi, C., ``ConceptNet 5.5: An open multilingual graph of general knowledge,'' \textit{AAAI Conference on Artificial Intelligence}, vol.~31, 2017.
+
+\bibitem{ref6}
+Fasolla, F. J., Mataric, M. J., ``Socially assistive robotics,'' in \textit{IEEE Handbook of Robotics}, pp.~1935--1972, 2016.
+
+\bibitem{ref7}
+Staubitz, F. M., Carty, C., Zeller, R., et al., ``Effectiveness of robot-assisted gait training in individuals following stroke,'' \textit{Physical Medicine and Rehabilitation}, vol.~45, no.~6, pp.~455--469, 2014.
+
+\bibitem{ref8}
+Lenat, D. B., Guha, R. V., ``Building large knowledge-based systems,'' \textit{Artificial Intelligence}, vol.~61, no.~1, pp.~3--39, 1993.
+
+\bibitem{ref9}
+Zhang, S., Roller, S., Goswami, A., et al., ``Can retrieval-augmented language models explain their predictions?'' \textit{arXiv preprint arXiv:2210.12466}, 2022.
+
+\bibitem{ref10}
+D'Elia, D., Stafford, R. Q., Broadbent, E., et al., ``Effects of robot expressiveness on emotion recognition,'' \textit{International Conference on Social Robotics}, pp.~237--246, 2014.
+
+\bibitem{ref11}
+Salem, M., Eyssel, F., Rohlfing, K., et al., ``To err is robot: How humans assess and act upon robot mistakes,'' \textit{Social Robotics}, pp.~357--367, 2013.
+
+\bibitem{ref12}
+Ahn, M., Brohan, A., Brown, N., et al., ``Do as I can, not as I say: Grounding language in robotic affordances,'' \textit{arXiv preprint arXiv:2204.01691}, 2022.
+
+\bibitem{ref13}
+Sap, M., Gabriel, S., Qin, L., et al., ``Social bias frames,'' \textit{ACL}, 2020.
+
+\bibitem{ref14}
+Ye, J., Qiu, Z., Ye, K., et al., ``A survey on large language models for machine learning: Conversational and prompt learning,'' \textit{arXiv preprint}, 2023.
+
+\bibitem{ref15}
+Stojnic, G., Demartsev, V., Frey, B. S., et al., ``Knowledge graphs for robotics planning,'' \textit{International Symposium on Experimental Robotics}, pp.~134--145, 2021.
+
+\bibitem{ref16}
+Brooks, R. A., ``The relationship between matter and life,'' \textit{Nature}, vol.~409, no.~6818, pp.~409--411, 2001.
+
+\bibitem{ref17}
+Bekey, G. A., ``Autonomous robots,'' \textit{MIT Press}, 2005.
+
+\bibitem{ref18}
+Ultralytics, ``YOLOv8: Real-time object detection,'' \url{https://github.com/ultralytics/ultralytics}, 2023.
+
+\bibitem{ref19}
+Wolf, T., Debut, L., Sanh, V., et al., ``Hugging Face's transformers: State-of-the-art natural language processing,'' \textit{arXiv preprint arXiv:1910.03771}, 2019.
+
+\bibitem{ref20}
+Serengil, S. I., Ozpinar, A., ``DeepFace: Face recognition via deep learning,'' \textit{IEEE International Symposium on Innovations in Intelligent Systems and Applications}, pp.~1--4, 2016.
+
+\bibitem{ref21}
+Cao, Z., Simon, T., Wei, S. E., Sheikh, Y., ``OpenPose: Realtime multi-person 2D pose estimation using part affinity fields,'' \textit{IEEE Transactions on Pattern Analysis and Machine Intelligence}, vol.~43, no.~1, pp.~172--186, 2019.
+
+\bibitem{ref22}
+Vosk Speech Recognition, \url{https://github.com/alphacep/vosk-api}, 2021.
+
+\bibitem{ref23}
+Google Cloud Speech-to-Text, \url{https://cloud.google.com/speech-to-text}, 2023.
+
+\bibitem{ref24}
+Brown, T., Mann, B., Ryder, N., et al., ``Language models are few-shot learners,'' \textit{Advances in Neural Information Processing Systems}, vol.~33, pp.~1877--1901, 2020.
+
+\bibitem{ref25}
+Lewis, P., Perez, E., Piktus, A., et al., ``Retrieval-augmented generation for knowledge-intensive NLP tasks,'' \textit{Advances in Neural Information Processing Systems}, vol.~33, pp.~9459--9474, 2020.
+
+\bibitem{ref26}
+Hogan, A., Blomqvist, E., Cochez, M., et al., ``Knowledge graphs,'' \textit{ACM Computing Surveys}, vol.~54, no.~4, pp.~1--37, 2021.
+
+\bibitem{ref27}
+Sakakibara, S., Kawaguchi, R., Aoki, S., et al., ``Designing robot personalities via behavior trees and language models,'' \textit{HRI '23}, pp.~123--131, 2023.
+
+\bibitem{ref28}
+Thawani, A., Singh, A., Prabhumoye, S., et al., ``Factual error correction for abstractive summarization models,'' \textit{EMNLP}, pp.~7720--7732, 2021.
+
+\bibitem{ref29}
+Leite, I., LoFi, C., Dautenhahn, K., ``Processing multimodal dialogue with the Multimodal Dialogue Manager,'' \textit{International Symposium on Robotics}, 2015.
+
+\bibitem{ref30}
+Ijspeert, A. J., Nakanishi, J., Schaal, S., ``Movement imitation with nonlinear dynamical systems in humanoid robots,'' \textit{IEEE Transactions on Robotics}, vol.~18, no.~5, pp.~670--682, 2002.
+
+\bibitem{ref31}
+Sucan, I. A., Chitta, S., ``MoveIt: An open source robotics manipulation platform,'' \textit{IEEE Robotics \& Automation Magazine}, vol.~20, no.~3, pp.~22--34, 2013.
+
+\bibitem{ref32}
+Mellinger, D., Kumar, V., ``Minimum snap trajectory generation and control for quadrotors,'' \textit{IEEE International Conference on Robotics and Automation}, pp.~2520--2525, 2011.
+
+\bibitem{ref33}
+Lynxmotion, ``SES900 Dual Arm Robot Kit,'' \url{https://www.robotshop.com/}, 2023.
+
+\bibitem{ref34}
+Breazeal, C., ``Toward sociable robots,'' \textit{IEEE Robotics \& Automation Magazine}, vol.~7, no.~4, pp.~12--19, 2000.
+
+\bibitem{ref35}
+van den Oord, A., Sifre, K., Kalchbrenner, N., et al., ``WaveNet: A generative model for raw audio,'' \textit{arXiv preprint arXiv:1609.03499}, 2016.
+
+\bibitem{ref36}
+Guiochet, J., Machin, M., Waeselynck, H., ``Safety-critical advanced robots: a survey,'' \textit{Robotics and Autonomous Systems}, vol.~94, pp.~43--52, 2017.
+
+\bibitem{ref37}
+OptiTrack, ``Motion Capture Systems,'' \url{https://optitrack.com/}, 2023.
+
+\bibitem{ref38}
+Zita, C., Stehr, R., Halit, et al., ``Real-time collision avoidance in humanoid robots,'' \textit{IEEE Robotics \& Automation Magazine}, vol.~14, no.~1, pp.~110--127, 2008.
+
+\bibitem{ref39}
+Goertzel, B., ``Artificial general intelligence: concept, state of the art, and future prospects,'' \textit{Journal of Artificial General Intelligence}, vol.~5, no.~1, pp.~1--46, 2014.
+
+\bibitem{ref40}
+Agre, P. E., Chapman, D., ``Pengi: An implementation of a theory of activity,'' \textit{AAAI}, vol.~7, pp.~268--272, 1987.
+
+\bibitem{ref41}
+Schaal, S., ``Learning from demonstration,'' \textit{Advances in Neural Information Processing Systems}, pp.~1040--1046, 1999.
+
+\end{thebibliography}
+
+\end{document}
+
+% end of file main_paper_stretchbot.tex

@@ -1,0 +1,56 @@
+\section{Implementation}
+\label{sec:implementation}
+
+\subsection{Software Stack}
+
+StretchBot is built on a modular software architecture using Robot Operating System 2 (ROS2) to coordinate communication between perception, reasoning, and execution components. Key libraries include:
+
+\begin{itemize}
+\item \textbf{Perception:} YOLOv8n (``You Only Look Once'', version 8, nano variant) for real-time object detection; \textbf{MediaPipe Pose} for skeleton landmark extraction and pose verification; DeepFace for facial emotion recognition; HuggingFace Transformers pipelines for voice-segment and transcript-level emotion analysis.
+\item \textbf{Reasoning:} Custom Python modules for KG retrieval and context integration; open-weight large language models served through the \textbf{OpenRouter API} (specifically DeepSeek-R1 as primary reasoning model and Llama-3.3-Nemotron-49B as the configured production model) for LLM-based planning; a secondary LLM accessed via the \textbf{HuggingFace Inference Client} (nscale provider) for output verification.
+\item \textbf{Execution:} MoveIt~2 for trajectory planning; \textbf{Vosk} with the \texttt{vosk-model-small-en-us-0.15} acoustic model for local, offline speech-to-text; \textbf{gTTS} (Google Text-to-Speech Python library) for standard speech synthesis and a HuggingFace Gradio TTS space for expressive, emotion-aware neural voices.
+\item \textbf{Spatial Perception:} \textbf{ArUco markers} (4×4 50-dictionary, OpenCV) combined with camera calibration for metric 3-D pose estimation of objects, enabling precise pointing commands.
+\item \textbf{Hardware Communication:} ROS2 (\texttt{rclpy}) with a dedicated node (\texttt{llm\_commander}) publishing symbolic commands on the \texttt{target\_point} topic; low-level drivers for the Lynxmotion SES900 arm.
+\end{itemize}
+
+A key architectural decision is the \textbf{concurrent execution} of LLM reasoning and pose monitoring. The LLM interaction runs in a dedicated Python thread, continuously accepting speech input and generating adaptive responses, while the main thread executes the real-time MediaPipe pose-tracking loop at 30\,Hz. An \texttt{exercise\_done} flag and a \texttt{stop\_flag} dictionary coordinate termination between the two threads.
+
+\subsection{Prompt Engineering and Response Format}
+
+The primary LLM is instructed through a comprehensive system prompt that provides context about the user, the stretching routine, detected objects, and emotional state. The prompt explicitly instructs the model to use predefined action prefixes and to adapt its tone based on the user's emotional state. The format ensures consistent machine-readable output while maintaining natural language quality.
+
+Example system prompt fragment:
+\begin{quote}
+\small\ttfamily
+You are a friendly and empathetic stretching assistant.\\
+The user is currently [emotional\_state].\\
+Detected objects in the room are: [objects].\\
+The current exercise is [exercise\_name], and the user status is [status].\\
+Use one of these action prefixes when relevant:\\
+NEXT\_EXERCISE, POINT\_<OBJECT>, STOP\_ROUTINE.\\
+Always be encouraging and personalized.\\
+Respond naturally, adapting your tone to the user's emotion.
+\end{quote}
+
+\subsection{Knowledge Representation}
+
+The internal knowledge graph is implemented as a structured \textbf{JSON file} (\texttt{knowledge\_graph.json}) parsed at runtime into Python dictionaries. Each entity entry stores a \texttt{relations} dictionary mapping predicate names to values or lists of values — a lightweight alternative to a full RDF triple store that keeps the system dependency-free. Key relations include:
+
+\begin{itemize}
+\item \textit{Entity-Property relations:} \texttt{(coffee, hasAffect, energizes)}, \texttt{(water, hasAffect, hydrates)}.
+\item \textit{Emotion-Response relations:} \texttt{(tired, suggests, break)}, \texttt{(tired, suggests, caffeine)}.
+\item \textit{Exercise-Benefit relations:} \texttt{(arm\_stretch, improves, shoulder\_flexibility)}.
+\item \textit{Affordance relations:} \texttt{(coffee, usedFor, energy\_boost)}, \texttt{(wall, usedFor, balance\_support)}.
+\end{itemize}
+
+When an entity or state is not found in the internal KG, the system queries the ConceptNet API to retrieve commonsense relations, filtering by the relation types \texttt{UsedFor}, \texttt{Causes}, \texttt{HasProperty}, \texttt{MotivatedByGoal}, and \texttt{IsA}.
+
+\subsection{Hardware Setup}
+
+The system is integrated with a Lynxmotion SES900 robotic arm mounted on a wheeled mobile base (optional). The robot is equipped with:
+\begin{itemize}
+\item An Intel RealSense RGB-D camera for object detection and posture estimation.
+\item A microphone array for speech capture and emotion recognition.
+\item Speakers for speech synthesis.
+\item Torque sensors on the arm for safety monitoring.
+\end{itemize}

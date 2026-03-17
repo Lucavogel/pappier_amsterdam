@@ -1,0 +1,48 @@
+\section{Discussion}
+\label{sec:discussion}
+
+Our results illuminate both the promise and the challenges of hybrid neuro-symbolic approaches in assistive robotics.
+
+\subsection{Key Findings}
+
+\textbf{Dimension-Specific Effectiveness:} The adaptive system excelled at adaptability and environmental grounding, supporting the hypothesis that LLM + KG integration can enable context-aware decision-making. However, this came at the cost of cognitive load for some users: two of three participants found the scripted version more relaxing and natural.
+
+\textbf{Actionable Knowledge Representation:} The internal KG was effective for common scenarios (fatigue, hydration, object affordances) but required ConceptNet fallback for novel situations. Notably, fallback was used in 32\% of reasoning cycles, providing concrete evidence that static domain-specific knowledge alone is insufficient in dynamic human environments. This supports the central claim of the paper: robust adaptation requires a hybrid representational backbone that combines curated symbolic knowledge with broader learned commonsense resources.
+
+\textbf{LLM Verification Mechanisms:} The secondary LLM verifier successfully prevented hallucinations and off-topic suggestions in 12\% of cases, supporting the argument that verification loops are necessary for safe LLM deployment in critical applications. However, the overhead (latency) and potential brittleness of this layer warrant further investigation.
+
+\subsection{Interplay Between Structured and Adaptive Behavior}
+
+A key design choice in StretchBot is the balance between a global scripted baseline and local adaptive branching points. This hybrid approach appears to offer a middle ground: the global routine ensures comprehensive exercise coverage and predictability, while local adaptations provide personalization without complete unpredictability.
+
+However, our results suggest that the optimal balance may be user-dependent. Users preferring predictability (P2, P3) might benefit from a ``script-first'' design where adaptation is offered optionally. In contrast, users seeking personalization (P1) might prefer adaptive-first with a safety net of fallback scripts.
+
+\subsection{Multimodal Perception and Emotion Recognition}
+
+The fusion of voice, facial, and text-based emotion recognition proved robust and reduced susceptibility to single-modality failures. However, emotion recognition remains a coarse proxy for actual user state. A user might sound tired but actually be focused; facial expressions can be ambiguous. Future work should explore richer state representations combining emotion with other signals (e.g., biometric data, explicit user feedback).
+
+\subsection{Latency and Real-Time Constraints}
+
+The adaptive system introduced approximately 25 seconds of additional latency per session compared to scripted execution (mean: $\approx2$–$3$ seconds per response). For a stretching routine, this is acceptable. However, for safety-critical applications (e.g., physical assistance or fall prevention), such latency could be problematic. Future work should explore distributed inference, model quantization, and edge computing to reduce latency.
+
+\subsection{Limitations}
+
+\begin{enumerate}
+\item \textbf{Small Sample Size:} With $N=3$, our quantitative results cannot be generalized. A larger, multi-site study is needed to validate findings across diverse populations.
+
+\item \textbf{Controlled Environment:} The study was conducted in a controlled laboratory with predefined objects. Real-world deployments may introduce variability that challenges the system's robustness.
+
+\item \textbf{Short Interaction Duration:} The 8–10 minute stretching routines do not capture effects of long-term engagement or habituation. Longitudinal studies would be valuable.
+
+\item \textbf{Limited KG Coverage:} The internal KG was hand-crafted for stretching scenarios. Scaling to diverse healthcare applications would require substantial KG expansion or automated KG construction.
+
+\item \textbf{LLM Dependency:} The system's reasoning relies on external LLM APIs (GPT-4), introducing dependency on third-party services and latency concerns. On-device models could address this but may sacrifice reasoning quality.
+
+\item \textbf{Evaluation Metrics:} We relied primarily on subjective Likert-scale ratings. Objective metrics (e.g., biometric measures of engagement, compliance, long-term health outcomes) would strengthen claims about system effectiveness.
+\end{enumerate}
+
+\subsection{Implications for Neuro-Symbolic Robotics}
+
+This work demonstrates that coupling LLMs with structured knowledge representations can yield more robust and explainable planning than LLMs alone. However, the integration is non-trivial: prompt engineering, knowledge graph design, and verification mechanisms must be carefully tuned. Moreover, the added complexity may not always be necessary; in some domains, scripted systems or purely neural approaches may suffice.
+
+For assistive robotics specifically, the key insight is that \textit{personalization and safety are not orthogonal}. By grounding LLM reasoning in both domain knowledge and user perception, and by adding a verification layer, we can achieve adaptation without sacrificing safety.

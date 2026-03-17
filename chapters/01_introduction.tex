@@ -1,0 +1,40 @@
+\section{Introduction}
+\label{sec:intro}
+
+Robotic systems are increasingly deployed in domestic and healthcare environments to support human wellbeing through physical assistance, rehabilitation, and guided exercise routines \cite{ref1,ref2}. Among these, assistive stretching robots have shown potential for improving flexibility, reducing stress, and encouraging physical activity in daily life \cite{ref3}. However, most existing systems remain scripted and inflexible, providing limited personalization to the user's physical state, emotional condition, or surrounding context \cite{ref4}. This lack of adaptation can reduce engagement, hinder safety, and limit long-term adoption.
+
+The fundamental challenge lies in balancing two competing demands: (1) \textit{structured predictability}—a clear script that ensures comprehensive exercise coverage and user confidence, and (2) \textit{contextual responsiveness}—real-time adaptation to the user's current state, emotions, and environment. Purely scripted systems excel at predictability but fail to personalize. Fully reactive systems can adapt but risk incoherence and repeated exercises.
+
+To address these challenges, this work investigates whether and how adaptive robotic guidance can outperform scripted routines in terms of personalization, naturalness, and contextual relevance. We examine to what extent multimodal perception combined with commonsense reasoning enables a robot to adapt its guidance to the user's state and environment. Building on this research question, we developed \textbf{StretchBot}, an adaptive robotic coach designed to guide users through a short morning stretching routine while dynamically adjusting its behavior to real-time multimodal cues.
+
+StretchBot integrates perception, commonsense reasoning, and interaction control in a unified architecture, enabling it to perceive user state through voice, facial expression, and posture, detect relevant objects in the environment, and adapt stretching plans accordingly. At its core lies a \textit{hybrid reasoning module} that couples a knowledge graph encoding causal, temporal, and affordance-based relations with a large language model (LLM) for context-aware decision-making \cite{ref5,ref26}. This reasoning pipeline is augmented with a verification loop using a secondary language model to ensure safety, protocol adherence, and empathetic communication before actions are executed \cite{ref28}.
+
+\subsection{Terminology and Abbreviations}
+
+Because this paper targets a general artificial intelligence readership, we briefly clarify key terms used throughout the manuscript. A \textit{knowledge graph} is a structured network of entities and relations (for example, \texttt{coffee -> reduces -> fatigue}) that supports explicit reasoning. \textit{ConceptNet} is a public commonsense knowledge base that stores broad everyday relations and is used here as a fallback when domain-specific knowledge is missing. \textit{Neuro-symbolic} refers to combining learned models (neural components) with explicit symbolic structures (rule-like or graph-based knowledge). \textit{Embodied action} means that system decisions are not only textual outputs but are executed physically by a robot in the environment.
+
+We use the following abbreviations consistently: \textit{LLM} (large language model), \textit{KG} (knowledge graph), \textit{STT} (speech-to-text), and \textit{TTS} (text-to-speech).
+
+\subsection{Research Questions and Contributions}
+
+Our work addresses three core research questions:
+
+\textbf{RQ1:} Can a hybrid neuro-symbolic architecture (LLM + knowledge graph) enable effective plan adaptation in assistive robotics?
+
+\textbf{RQ2:} How should actionable knowledge be represented and integrated with LLM reasoning to ground robot decisions in both perception and domain knowledge?
+
+\textbf{RQ3:} Do users perceive adaptive robot guidance as preferable to scripted routines, and in which dimensions?
+
+The main contributions of this work are:
+
+\begin{enumerate}
+\item An adaptive stretching robot framework integrating multimodal perception (emotion recognition, object detection, posture estimation), commonsense reasoning, and interaction control for guided physical routines.
+
+\item Integration of knowledge graph reasoning with large language model prompt design, enabling the robot to adapt exercise plans based on user state, environment, and prior interaction history.
+
+\item A collaborative interaction protocol ensuring explicit user confirmation before all actions, balancing proactive adaptation with human oversight.
+
+\item Comparative human evaluation of scripted versus adaptive guidance in a real-world stretching scenario, with quantitative ratings and qualitative feedback.
+
+\item Analysis of strengths and limitations of hybrid LLM-KG planning for assistive robotics, with implications for future neuro-symbolic systems.
+\end{enumerate}

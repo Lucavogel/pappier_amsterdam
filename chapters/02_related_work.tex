@@ -1,0 +1,26 @@
+\section{Related Work}
+\label{sec:related}
+
+Our work sits at the intersection of four research areas: assistive robotics, commonsense reasoning, multimodal interaction, and LLM-based planning.
+
+\subsection{Assistive Robotics for Physical Guidance}
+
+Robots have been explored as assistants for stretching and rehabilitation exercises, aiming to improve user wellbeing and engagement. Previous work \cite{ref6} showed that scripted stretching robots can help users maintain focus and reduce stress during routines. However, such systems are limited by their lack of real-time adaptation to user state. Another study \cite{ref7} proposed a rehabilitation robot for Parkinson's patients that adapted exercises over time, but the adaptation relied on fixed predefined rules. In contrast, StretchBot combines multimodal perception with commonsense reasoning to adapt instructions continuously during a session, allowing for more personalized and context-aware guidance.
+
+Key challenges in assistive robotics include ensuring safety while granting autonomy, personalizing guidance to individual needs, and maintaining user engagement over time. Our approach addresses these by coupling structured exercise baselines with adaptive branching points.
+
+\subsection{Commonsense Reasoning and Knowledge Graphs}
+
+Commonsense reasoning has been used to give robots a better understanding of their environment and the needs of the user \cite{ref8}. Prior work \cite{ref8} proposed multiple dimensions of commonsense knowledge, which inspired the organization of our knowledge graph. Another study \cite{ref9} showed that combining symbolic planning with language models can fill gaps in action reasoning. In our case, commonsense reasoning is applied to connect perceived user states—such as fatigue or thirst—with relevant object affordances, allowing the robot to decide when to suggest a break or indicate a helpful object.
+
+Knowledge graphs provide interpretability and structured reasoning compared to unstructured language models alone. By coupling KGs with LLMs, we leverage both the explainability of symbolic systems and the flexibility of neural language models.
+
+\subsection{Multimodal Interaction in Human-Robot Interaction}
+
+Prior work has shown that combining multiple sensing modalities improves the adaptability and perceived quality of human-robot interaction \cite{ref10}. For example, researchers \cite{ref10} used emotion and posture detection to adjust guidance, while other work \cite{ref11} adapted robot behavior in response to signs of fatigue. StretchBot integrates emotion, posture, and environmental object cues into a reasoning process that supports timely and context-aware assistance, such as proposing a pause or pointing to a relevant object.
+
+The fusion of multiple modalities also increases robustness: transient errors in one modality can be compensated by others, improving overall reliability.
+
+\subsection{LLM-Based Planning and Reasoning}
+
+Recent work has explored the use of large language models for robotic planning \cite{ref12}. One approach \cite{ref12} introduced SayCan, combining LLM-based reasoning with affordance detection to generate feasible action plans. Another study \cite{ref13} demonstrated that maintaining an ``inner monologue'' allows LLMs to revise plans in real time, increasing success rates. Several surveys \cite{ref14} have identified strengths and weaknesses of LLM reasoning, while recent contributions have highlighted the need for hybrid approaches \cite{ref15}. StretchBot applies these insights to the domain of physical guidance, coupling LLMs with a structured knowledge graph and a verification loop to ensure safe, empathetic, and contextually appropriate robot actions.

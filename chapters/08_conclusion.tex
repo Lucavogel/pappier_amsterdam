@@ -1,0 +1,30 @@
+\section{Conclusion and Future Work}
+\label{sec:conclusion}
+
+This paper presented StretchBot, a neuro-symbolic adaptive robotic coach that integrates multimodal perception, knowledge graph reasoning, and large language models to guide personalized stretching routines. Our key contribution is a concrete demonstration of how actionable knowledge representation can be coupled with LLMs to ground robot decisions in both structured domain knowledge and real-time environmental perception.
+
+More broadly, StretchBot provides a direct proof-of-concept for bridging symbolic reasoning, learned knowledge, and embodied action: symbolic structure is provided by the KG, adaptive learned inference is provided by the LLM, and the resulting decisions are enacted physically by the robot through grounded interaction.
+
+Through a comparative user study, we showed that the adaptive system excelled at adaptability and environmental awareness but came at a cost in cognitive load and session smoothness. These findings highlight the importance of user-centered design and the need for adaptive systems that can toggle between scripted and adaptive modes based on user preference.
+
+\subsection{Future Directions}
+
+\begin{enumerate}
+\item \textbf{Extended User Studies:} Conduct larger, longitudinal studies across diverse populations to validate generalizability and assess effects of long-term interaction.
+
+\item \textbf{Richer State Representations:} Integrate biometric signals (heart rate, muscle tension) alongside emotions to provide more nuanced user state estimates.
+
+\item \textbf{Scalability to Other Domains:} Extend the StretchBot framework to other assistive scenarios (e.g., rehabilitation after injury, cognitive exercises for elderly users).
+
+\item \textbf{On-Device Models:} Explore quantized LLMs and edge inference to reduce latency and dependency on external APIs.
+
+\item \textbf{Automated KG Construction:} Develop methods to automatically build or expand domain-specific knowledge graphs from unstructured data.
+
+\item \textbf{User Preference Learning:} Implement reinforcement learning mechanisms to learn individual user preferences for scripted vs. adaptive guidance over time.
+
+\item \textbf{Formal Verification:} Apply formal methods to verify that the hybrid reasoning system maintains safety invariants and cannot issue unsafe commands.
+\end{enumerate}
+
+\subsection{Broader Impact}
+
+Adaptive assistive robots have the potential to improve health outcomes and quality of life for aging populations and individuals with mobility limitations. However, these systems must be designed carefully to respect user autonomy, ensure safety, and avoid over-reliance on technology. This work takes a step toward principled design of such systems, but responsible deployment requires interdisciplinary collaboration between roboticists, ethicists, healthcare professionals, and end-users.

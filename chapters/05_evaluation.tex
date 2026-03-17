@@ -1,0 +1,45 @@
+\section{Proof-of-Concept and Pilot Evaluation}
+\label{sec:evaluation}
+
+\subsection{Evaluation Design}
+
+We conducted a proof-of-concept comparative user study contrasting a scripted baseline with the adaptive system. The study design was a within-subjects pilot comparison where participants experienced both conditions in counterbalanced order.
+
+\subsection{Participants and Protocol}
+
+Three participants (P1, P2, P3) aged 28–35 participated in the pilot study. Each participant completed two stretching sessions, each lasting approximately 8–10 minutes: (1) a scripted baseline condition where the robot followed a fixed exercise sequence without perception-based adaptation, and (2) the adaptive condition where the robot adjusted guidance based on user state and environment.
+
+A two-minute break separated the two conditions. Participants were informed of the study's purpose and signed informed consent forms. The study was conducted in a controlled laboratory environment with standard objects present (coffee mug, water bottle, banana, chair).
+
+\subsection{Quantitative Metrics}
+
+After each condition, participants completed a custom questionnaire rating the robot's performance on six dimensions:
+
+\begin{enumerate}
+\item \textbf{Clarity:} How clear were the robot's instructions? (1–5 Likert scale)
+\item \textbf{Comfort:} How comfortable were you during the routine? (1–5)
+\item \textbf{Adaptability:} How well did the robot adapt to your state and needs? (1–5)
+\item \textbf{Trust:} How much did you trust the robot's decisions? (1–5)
+\item \textbf{Naturalness:} How natural and human-like was the robot's behavior? (1–5)
+\item \textbf{Object Relevance:} How relevant were the robot's object suggestions? (1–5, N/A for scripted condition)
+\end{enumerate}
+
+Additionally, we recorded:
+\begin{itemize}
+\item Task completion time (total session duration).
+\item Number of user interventions (corrections or clarifications requested).
+\item Number of LLM reasoning cycles per session.
+\item Latency of adaptive responses (time from user input to robot output).
+\end{itemize}
+
+\subsection{Qualitative Feedback}
+
+After completing both conditions, participants participated in semi-structured interviews (15–20 minutes) discussing:
+\begin{itemize}
+\item Which version they preferred and why.
+\item Perceived strengths and weaknesses of each approach.
+\item Suggestions for improvement.
+\item Overall sense of engagement and repeated-use intentions.
+\end{itemize}
+
+All interviews were recorded, transcribed, and analyzed using thematic coding by two independent raters. Inter-rater agreement (Cohen's kappa) was monitored to ensure consistency.
