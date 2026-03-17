@@ -46,3 +46,19 @@ The adaptive system introduced approximately 25 seconds of additional latency pe
 This work demonstrates that coupling LLMs with structured knowledge representations can yield more robust and explainable planning than LLMs alone. However, the integration is non-trivial: prompt engineering, knowledge graph design, and verification mechanisms must be carefully tuned. Moreover, the added complexity may not always be necessary; in some domains, scripted systems or purely neural approaches may suffice.
 
 For assistive robotics specifically, the key insight is that \textit{personalization and safety are not orthogonal}. By grounding LLM reasoning in both domain knowledge and user perception, and by adding a verification layer, we can achieve adaptation without sacrificing safety.
+
+\subsection{Practical Deployment Recommendations}
+
+Based on this pilot, we recommend four design principles for real-world deployment of adaptive assistive robots:
+
+\begin{enumerate}
+\item \textbf{Default to low cognitive load:} Start with a smooth scripted flow and introduce adaptive branching only when user state strongly indicates benefit.
+
+\item \textbf{Expose adaptation controls:} Allow users to choose interaction style (scripted-first vs. adaptive-first) at session start and to change mode during execution.
+
+\item \textbf{Separate safety from style:} Keep hard safety constraints deterministic (motion bounds, forbidden actions) while allowing conversational style to remain flexible.
+
+\item \textbf{Log adaptation decisions:} Store structured traces of perception signals, KG evidence, and verifier edits to support auditability and post-hoc failure analysis.
+\end{enumerate}
+
+These recommendations are intended to reduce friction in user experience while preserving the principal advantages of neuro-symbolic adaptation.

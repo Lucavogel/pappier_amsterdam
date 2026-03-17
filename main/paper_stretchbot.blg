@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2022/dev/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: paper_stretchbot.aux
+The style file: sn-basic.bst
+Database file #1: ../references/paper_stretchbot.bib
+sn-basic.bst [2024/07/19 v1.1 bibliography style]
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+You've used 28 entries,
+            3567 wiz_defined-function locations,
+            837 strings with 9345 characters,
+and the built_in function-call counts, 10341 in all, are:
+= -- 946
+> -- 280
+< -- 28
++ -- 112
+- -- 84
+* -- 533
+:= -- 1822
+add.period$ -- 26
+call.type$ -- 28
+change.case$ -- 194
+chr.to.int$ -- 28
+cite$ -- 28
+duplicate$ -- 838
+empty$ -- 811
+format.name$ -- 112
+if$ -- 2037
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 140
+newline$ -- 93
+num.names$ -- 112
+pop$ -- 372
+preamble$ -- 1
+purify$ -- 140
+quote$ -- 0
+skip$ -- 337
+stack$ -- 0
+substring$ -- 364
+swap$ -- 250
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 252
+warning$ -- 0
+while$ -- 84
+width$ -- 0
+write$ -- 286
