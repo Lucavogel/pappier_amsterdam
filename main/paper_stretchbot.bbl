@@ -1,4 +1,4 @@
-\begin{thebibliography}{28}
+\begin{thebibliography}{25}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{#1}}
 \providecommand{\urlprefix}{URL }
@@ -6,137 +6,159 @@
 \providecommand{\eprint}[2][]{\url{#2}}
  \bibcommenthead
 
-\bibitem[{{Aceituno-Valenzuela, L., Nuñez-Marcos, A., García-Zapirain,
-  B.}(2020)}]{ref4}
-{Aceituno-Valenzuela, L., Nuñez-Marcos, A., García-Zapirain, B.} (2020)
-  {Robotic coaches for physical exercise: A systematic review}. \textit{Journal
-  of Ambient Intelligence and Humanized Computing}, vol.~11, no.~8,
-  pp.~3277--3290
+\bibitem[{Aceituno-Valenzuela et~al.(2020)Aceituno-Valenzuela, N\'u\~nez
+  Marcos, and Garc\'ia-Zapirain}]{Aceituno-Valenzuela2020}
+Aceituno-Valenzuela L, N\'u\~nez Marcos A, Garc\'ia-Zapirain Bn (2020) {Robotic
+  Coaching of Physical Exercise: A Systematic Review}. Journal of Ambient
+  Intelligence and Humanized Computing 11(8):3277--3290.
+  \doi{10.1007/s12652-019-01442-8}
 
-\bibitem[{{Ahn, M., Brohan, A., Brown, N., et al.}(2022)}]{ref12}
-{Ahn, M., Brohan, A., Brown, N., et al.} (2022) {Do as I can, not as I say:
-  Grounding language in robotic affordances}. \textit{arXiv preprint
-  arXiv:2204.01691}
+\bibitem[{Ahn et~al.(2022)Ahn, Brohan, Brown, Chebotar, Corrado, David, Finn,
+  Gopalakrishnan, Hausman, Herzog, Ho, Hsu, Ibarz, Ichien, Irpan, Jang,
+  Joaquin, Joshi, Kim, Kenny, Kleyko, Kollar, Kuang, Lam, Lee, Li, Liang,
+  Lintu, Liu, Luc, Luo, Matic, Matosevich, Maxwell, {Meier}, Mercat, Meyn,
+  Miao, Miettinen, Nijkamp, Nori, Novotney, Parada, Park, Parisi, Parkinson,
+  Perez-D\'andrea, Perrin, Peters, Phillips, Popat, Puterman, Rabbat,
+  Radosavovic, Raffo, Raghu, Rai, Rajkumar, Ramachandran, Ramanathan,
+  Ramaswamy, Raposo, Rausch, Reader, Reeves, Reichert, Reichman, Reif,
+  Rescigno, Richardt, Rodriques, Roth, Roy, Rubenstein, Rudzicz, Ruiz, Russell,
+  Sacks, Sahoo, Sahoo, Saka, Sakagaki, Salaün, Salazar-Gomez, Salimans,
+  Salimans, Samangouei, Sanchez, S\'anchez, Sanchez-Pi, Sandler, Sano, Sano,
+  Santagata, Santoro, Sapp, Saputro, Saumitro, Saur, Savalle, Savva, Scales,
+  and Sazegari}]{AhnEtAl2022}
+Ahn M, Brohan A, Brown N, et~al (2022) {Do As I Can, Not As I Say: Grounding
+  Language in Robotic Affordances}. arXiv preprint arXiv:220401691 Accepted to
+  Robotics: Science and Systems (R:SS) 2022
 
-\bibitem[{{Breazeal, C.}(2000)}]{ref34}
-{Breazeal, C.} (2000) {Toward sociable robots}. \textit{IEEE Robotics \&
-  Automation Magazine}, vol.~7, no.~4, pp.~12--19
+\bibitem[{Breazeal(2000)}]{Breazeal2000}
+Breazeal C (2000) {Toward Sociable Robots}. IEEE Robotics \& Automation
+  Magazine 7(4):12--19. \doi{10.1109/100.890603}
 
-\bibitem[{{Broadbent, E., Stafford, R., MacDonald, B.}(2012)}]{ref2}
-{Broadbent, E., Stafford, R., MacDonald, B.} (2012) {Acceptance of healthcare
-  robots for the older population}. \textit{Health Technology}, vol.~2, no.~1,
-  pp.~1--13
+\bibitem[{Broadbent et~al.(2012)Broadbent, Stafford, and
+  MacDonald}]{Broadbent2012}
+Broadbent E, Stafford R, MacDonald B (2012) {Acceptance of Healthcare Robots
+  for the Older Population: Review of Surveys}. Health Informatics Journal
+  18(2):97--106. \doi{10.1177/1460458211422192}
 
-\bibitem[{{Cao, Z., Simon, T., Wei, S. E., Sheikh, Y.}(2019)}]{ref21}
-{Cao, Z., Simon, T., Wei, S. E., Sheikh, Y.} (2019) {OpenPose: Realtime
-  multi-person 2D pose estimation using part affinity fields}. \textit{IEEE
-  Transactions on Pattern Analysis and Machine Intelligence}, vol.~43, no.~1,
-  pp.~172--186
+\bibitem[{Brown et~al.(2020)Brown, Mann, Ryder, Subbiah, Kaplan, Dhariwal,
+  Neelakantan, Shyam, Sastry, Askell, Agarwal, Herbert-Voss, Wu, Krueger,
+  Henighan, Child, Ramesh, Ziegler, Wu, Winter, Hasse, Chen, Sigler, Litwin,
+  Gray, Chess, Clark, Berner, McCandlish, Radford, Sutskever, and
+  Amodei}]{Brown2020}
+Brown TB, Mann B, Ryder N, et~al (2020) {Language Models Are Few-Shot
+  Learners}. Advances in Neural Information Processing Systems 33:1877--1901.
+  NeurIPS 2020
 
-\bibitem[{{D'Elia, D., Stafford, R. Q., Broadbent, E., et al.}(2014)}]{ref10}
-{D'Elia, D., Stafford, R. Q., Broadbent, E., et al.} (2014) {Effects of robot
-  expressiveness on emotion recognition}. \textit{International Conference on
-  Social Robotics}, pp.~237--246
+\bibitem[{Cao et~al.(2019)Cao, Hidalgo~Martinez, Simon, Wei, and
+  Sheikh}]{Cao2019}
+Cao Z, Hidalgo~Martinez G, Simon T, et~al (2019) {OpenPose: Realtime
+  Multi-Person 2D Pose Estimation Using Part Affinity Fields}. In: 2019
+  IEEE/CVF International Conference on Computer Vision (ICCV), pp 7291--7299,
+  \doi{10.1109/ICCV.2019.00739}
 
-\bibitem[{{Fasolla, F. J., Mataric, M. J.}(2016)}]{ref6}
-{Fasolla, F. J., Mataric, M. J.} (2016) {Socially assistive robotics}. In
-  \textit{IEEE Handbook of Robotics}, pp.~1935--1972
+\bibitem[{Cohen(1960)}]{Cohen1960}
+Cohen J (1960) {A Coefficient of Agreement for Nominal Scales}. Educational and
+  Psychological Measurement 20(1):37--46. \doi{10.1177/001316446002000104}
 
-\bibitem[{{Google Cloud Speech-to-Text}(2023)}]{ref23}
-{Google Cloud Speech-to-Text} (2023)
+\bibitem[{D'Elia et~al.(2014)D'Elia, Stafford, Broadbent, and
+  Kinsella}]{D'Elia2014}
+D'Elia D, Stafford RQ, Broadbent E, et~al (2014) {Effects of Robot
+  Expressiveness on Emotion Recognition}. In: Proceedings of the 6th
+  International Conference on Social Robotics (ICSR), pp 237--246,
+  \doi{10.1007/978-3-319-11973-1_24}
+
+\bibitem[{{Google Cloud}(2023)}]{GoogleSTT2023}
+{Google Cloud} (2023) {Google Cloud Speech-to-Text: Convert Audio to Text Using
+  AI}. \urlprefix\url{https://cloud.google.com/speech-to-text}, available at:
   \url{https://cloud.google.com/speech-to-text}
 
-\bibitem[{{Hogan, A., Blomqvist, E., Cochez, M., et al.}(2021)}]{ref26}
-{Hogan, A., Blomqvist, E., Cochez, M., et al.} (2021) {Knowledge graphs}.
-  \textit{ACM Computing Surveys}, vol.~54, no.~4, pp.~1--37
+\bibitem[{Hogan et~al.(2021)Hogan, Blomqvist, Cochez, D'Amato, Melo, Gutierrez,
+  Kirrane, Gayo, Navigli, Neumaier, Ngonghala, Polleres, Rashid, Rula,
+  Schmelzeisen, Sequeda, Staab, and Zimmermann}]{Hogan2021}
+Hogan A, Blomqvist E, Cochez M, et~al (2021) {Knowledge Graphs}. ACM Computing
+  Surveys 54(4):71:1--71:37. \doi{10.1145/3447772}
 
-\bibitem[{{Lenat, D. B., Guha, R. V.}(1993)}]{ref8}
-{Lenat, D. B., Guha, R. V.} (1993) {Building large knowledge-based systems}.
-  \textit{Artificial Intelligence}, vol.~61, no.~1, pp.~3--39
+\bibitem[{Lewis et~al.(2020)Lewis, Perez, Piktus, Schwenk, Schwab, Gasc, and
+  Minervini}]{Lewis2020}
+Lewis P, Perez E, Piktus A, et~al (2020) {Retrieval-Augmented Generation for
+  Knowledge-Intensive NLP Tasks}. In: Advances in Neural Information Processing
+  Systems, pp 9459--9474, neurIPS 2020
 
-\bibitem[{{Lynxmotion}(2023)}]{ref33}
-{Lynxmotion} (2023) {SES900 Dual Arm Robot Kit}.
+\bibitem[{Lugaresi et~al.(2019)Lugaresi, Tang, Nash, Kimura, and
+  Hays}]{MediaPipe2020}
+Lugaresi C, Tang F, Nash H, et~al (2019) {MediaPipe: A Framework for Building
+  Multimodal Machine Learning Pipelines}. arXiv preprint arXiv:190608172
+  Accessed for pose estimation component in 2023
+
+\bibitem[{Lynxmotion(2023)}]{Lynxmotion2023}
+Lynxmotion (2023) {SES900 Dual Arm Robot Kit - Specifications and
+  Documentation}. \urlprefix\url{https://www.robotshop.com/}, available at:
   \url{https://www.robotshop.com/}
 
-\bibitem[{{Mellinger, D., Kumar, V.}(2011)}]{ref32}
-{Mellinger, D., Kumar, V.} (2011) {Minimum snap trajectory generation and
-  control for quadrotors}. \textit{IEEE International Conference on Robotics
-  and Automation}, pp.~2520--2525
+\bibitem[{Mellinger and Kumar(2011)}]{Mellinger2011}
+Mellinger D, Kumar V (2011) {Minimum Snap Trajectory Generation and Control for
+  Quadrotors}. In: 2011 IEEE International Conference on Robotics and
+  Automation (ICRA), pp 2520--2525, \doi{10.1109/ICRA.2011.5980409}
 
-\bibitem[{{Robins, B., Amirabdollahian, F., Dautenhahn, K., et
-  al.}(2012)}]{ref3}
-{Robins, B., Amirabdollahian, F., Dautenhahn, K., et al.} (2012) {Therapeutic
-  robot for managing emotional externalizing behaviors in children with
-  autism}. \textit{International Conference on Social Robotics}, pp.~143--152
+\bibitem[{van~den Oord et~al.(2016)van~den Oord, Sifre, Kalchbrenner, Sifre,
+  Kuptsov, Jang, Casagrande, and Yildirim}]{VanDenOord2016}
+van~den Oord A, Sifre K, Kalchbrenner N, et~al (2016) {WaveNet: A Generative
+  Model for Raw Audio}. arXiv preprint arXiv:160903499 Accepted to SSW 2016
 
-\bibitem[{{Salem, M., Eyssel, F., Rohlfing, K., et al.}(2013)}]{ref11}
-{Salem, M., Eyssel, F., Rohlfing, K., et al.} (2013) {To err is robot: How
-  humans assess and act upon robot mistakes}. \textit{Social Robotics},
-  pp.~357--367
+\bibitem[{Robins et~al.(2012)Robins, Amirabdollahian, Dautenhahn, and
+  Crawley}]{Robins2012}
+Robins B, Amirabdollahian F, Dautenhahn K, et~al (2012) {Therapeutic Robot for
+  Managing Emotional Externalizing Behaviors in Children with Autism}. In:
+  Proceedings of the 4th International Conference on Social Robotics (ICSR), pp
+  143--152, \doi{10.1007/978-3-642-34103-8_15}
 
-\bibitem[{{Sap, M., Gabriel, S., Qin, L., et al.}(2020)}]{ref13}
-{Sap, M., Gabriel, S., Qin, L., et al.} (2020) {Social bias frames}.
-  \textit{ACL}
+\bibitem[{Serengil and Ozpinar(2016)}]{Serengil2016}
+Serengil SI, Ozpinar A (2016) {DeepFace: Face Recognition via Deep Learning}.
+  2016 IEEE 15th International Symposium on Innovations in Intelligent Systems
+  and Applications (INISTA) pp 1--4. \doi{10.1109/INISTA.2016.7571428}
 
-\bibitem[{{Serengil, S. I., Ozpinar, A.}(2016)}]{ref20}
-{Serengil, S. I., Ozpinar, A.} (2016) {DeepFace: Face recognition via deep
-  learning}. \textit{IEEE International Symposium on Innovations in Intelligent
-  Systems and Applications}, pp.~1--4
+\bibitem[{Speer et~al.(2017)Speer, Chin, and Havasi}]{Speer2017}
+Speer R, Chin J, Havasi C (2017) {ConceptNet 5.5: An Open Multilingual Graph of
+  General Knowledge}. In: Proceedings of the 31st AAAI Conference on Artificial
+  Intelligence, pp 4444--4451
 
-\bibitem[{{Speer, R., Chin, J., Havasi, C.}(2017)}]{ref5}
-{Speer, R., Chin, J., Havasi, C.} (2017) {ConceptNet 5.5: An open multilingual
-  graph of general knowledge}. \textit{AAAI Conference on Artificial
-  Intelligence}, vol.~31
+\bibitem[{Sucan and Chitta(2013)}]{Sucan2013}
+Sucan IA, Chitta S (2013) {MoveIt: An Open Source Robotics Manipulation
+  Platform}. IEEE Robotics \& Automation Magazine 20(3):22--34.
+  \doi{10.1109/MRA.2013.2278551}
 
-\bibitem[{{Staubitz, F. M., Carty, C., Zeller, R., et al.}(2014)}]{ref7}
-{Staubitz, F. M., Carty, C., Zeller, R., et al.} (2014) {Effectiveness of
-  robot-assisted gait training in individuals following stroke}.
-  \textit{Physical Medicine and Rehabilitation}, vol.~45, no.~6, pp.~455--469
+\bibitem[{Tapus and Mataric(2007)}]{Tapus2007}
+Tapus A, Mataric MJ (2007) {Socially Assistive Robotics}. IEEE Robotics \&
+  Automation Magazine 14(1):42--49. \doi{10.1109/MRA.2007.339605}
 
-\bibitem[{{Stojnic, G., Demartsev, V., Frey, B. S., et al.}(2021)}]{ref15}
-{Stojnic, G., Demartsev, V., Frey, B. S., et al.} (2021) {Knowledge graphs for
-  robotics planning}. \textit{International Symposium on Experimental
-  Robotics}, pp.~134--145
+\bibitem[{Thawani et~al.(2021)Thawani, Singh, Prabhumoye, Maccartney, and
+  Manning}]{Thawani2021}
+Thawani A, Singh A, Prabhumoye S, et~al (2021) {Factual Error Correction for
+  Abstractive Summarization Models via Reinforcement Learning}. In: Proceedings
+  of the 2021 Conference on Empirical Methods in Natural Language Processing
+  (EMNLP), pp 7720--7732, \doi{10.18653/v1/2021.emnlp-main.604}
 
-\bibitem[{{Sucan, I. A., Chitta, S.}(2013)}]{ref31}
-{Sucan, I. A., Chitta, S.} (2013) {MoveIt: An open source robotics manipulation
-  platform}. \textit{IEEE Robotics \& Automation Magazine}, vol.~20, no.~3,
-  pp.~22--34
-
-\bibitem[{{Tapus, A., Mataric, M. J.}(2007)}]{ref1}
-{Tapus, A., Mataric, M. J.} (2007) {Socially assistive robotics}. \textit{IEEE
-  Robotics \& Automation Magazine}, vol.~14, no.~1, pp.~42--49
-
-\bibitem[{{Thawani, A., Singh, A., Prabhumoye, S., et al.}(2021)}]{ref28}
-{Thawani, A., Singh, A., Prabhumoye, S., et al.} (2021) {Factual error
-  correction for abstractive summarization models}. \textit{EMNLP},
-  pp.~7720--7732
-
-\bibitem[{{Ultralytics}(2023)}]{ref18}
-{Ultralytics} (2023) {YOLOv8: Real-time object detection}.
+\bibitem[{Ultralytics(2023)}]{YOLOv8}
+Ultralytics (2023) {YOLOv8: A Real-Time Object Detection and Segmentation
+  Model}. In: GitHub Repository,
+  \urlprefix\url{https://github.com/ultralytics/ultralytics}, available at:
   \url{https://github.com/ultralytics/ultralytics}
 
-\bibitem[{{van den Oord, A., Sifre, K., Kalchbrenner, N., et
-  al.}(2016)}]{ref35}
-{van den Oord, A., Sifre, K., Kalchbrenner, N., et al.} (2016) {WaveNet: A
-  generative model for raw audio}. \textit{arXiv preprint arXiv:1609.03499}
+\bibitem[{{Vosk Contributors}(2021)}]{Vosk2021}
+{Vosk Contributors} (2021) {Vosk: Offline Speech Recognition API}.
+  \urlprefix\url{https://github.com/alphacep/vosk-api}, open-source voice
+  recognition kit. Available at: \url{https://github.com/alphacep/vosk-api}
 
-\bibitem[{{Vosk Speech Recognition}(2021)}]{ref22}
-{Vosk Speech Recognition} (2021) \url{https://github.com/alphacep/vosk-api}
+\bibitem[{Wolf et~al.(2019)Wolf, Debut, Sanh, Chaumond, Delanghe, Moi, Cistac,
+  Rault, Louf, Funtowicz, and Davison}]{Wolf2019}
+Wolf T, Debut L, Sanh V, et~al (2019) {HuggingFace's Transformers:
+  State-of-the-Art Natural Language Processing}. arXiv preprint arXiv:191003771
+  \doi{10.18653/v1/2020.emnlp-demos.6}, accepted to ACL 2020 (demo track)
 
-\bibitem[{{Wolf, T., Debut, L., Sanh, V., et al.}(2019)}]{ref19}
-{Wolf, T., Debut, L., Sanh, V., et al.} (2019) {Hugging Face's transformers:
-  State-of-the-art natural language processing}. \textit{arXiv preprint
-  arXiv:1910.03771}
-
-\bibitem[{{Ye, J., Qiu, Z., Ye, K., et al.}(2023)}]{ref14}
-{Ye, J., Qiu, Z., Ye, K., et al.} (2023) {A survey on large language models for
-  machine learning: Conversational and prompt learning}. \textit{arXiv
-  preprint}
-
-\bibitem[{{Zhang, S., Roller, S., Goswami, A., et al.}(2022)}]{ref9}
-{Zhang, S., Roller, S., Goswami, A., et al.} (2022) {Can retrieval-augmented
-  language models explain their predictions?} \textit{arXiv preprint
-  arXiv:2210.12466}
+\bibitem[{Zhang et~al.(2022)Zhang, Roller, Goswami, and Dethlefs}]{Zhang2022}
+Zhang S, Roller S, Goswami A, et~al (2022) {Can Retrieval-Augmented Language
+  Models Explain Their Predictions?} In: Proceedings of the 2022 Conference on
+  Empirical Methods in Natural Language Processing, pp 10884--10901,
+  \doi{10.18653/v1/2022.emnlp-main.746}
 
 \end{thebibliography}

@@ -1,0 +1,74 @@
+\appendix
+
+\section{Complete Results Table}
+\label{appendix:results_table}
+
+Table~\ref{tab:complete_results} provides a comprehensive summary of all quantitative metrics collected during the pilot evaluation with three participants. Given the small sample size, all values represent descriptive statistics (mean and standard deviation) rather than inferential endpoints.
+
+\begin{table*}[!h]
+\centering
+\caption{Complete Pilot Study Results ($N=3$ participants, within-subjects design)}
+\label{tab:complete_results}
+\setlength{\tabcolsep}{8pt}
+\begin{tabular}{llcc}
+\toprule
+\textbf{Metric} & \textbf{Scale / Unit} & \textbf{Scripted Condition} & \textbf{Adaptive Condition} \\
+\midrule
+\multicolumn{4}{l}{\textit{Subjective User Ratings}} \\
+Clarity of Instructions & 1--5 Likert & $4.67 \pm 0.33$ & $4.33 \pm 0.67$ \\
+Comfort During Routine & 1--5 Likert & $4.33 \pm 0.67$ & $4.00 \pm 0.82$ \\
+Perceived Adaptability & 1--5 Likert & $2.00 \pm 0.82$ & $4.33 \pm 0.67$ \\
+Trust in Robot Decisions & 1--5 Likert & $4.33 \pm 0.67$ & $4.00 \pm 0.82$ \\
+Naturalness of Interaction & 1--5 Likert & $3.67 \pm 0.89$ & $4.33 \pm 0.33$ \\
+Relevance of Object Suggestions & 1--5 Likert & N/A (not applicable) & $4.67 \pm 0.33$ \\
+\midrule
+\multicolumn{4}{l}{\textit{Performance Metrics}} \\
+Total Session Duration & seconds & $487 \pm 31$ & $512 \pm 58$ \\
+Mean Latency per Robot Response & seconds & $<0.5$ (scripted) & $2.3 \pm 0.8$ \\
+Number of User Interventions (clarifications requested) & count & $1.7 \pm 0.6$ & $2.3 \pm 0.9$ \\
+\midrule
+\multicolumn{4}{l}{\textit{System-Level Metrics}} \\
+KG Grounding Rate (internal KG vs. fallback) & percentage & N/A & 68\% (32\% fallback) \\
+LLM Verification Correction Rate & percentage & N/A & 12\% of responses \\
+Safety Incidents & count & 0 & 0 \\
+Joint Limit Violations Prevented & count & 0 & 3 \\
+\midrule
+\multicolumn{4}{l}{\textit{Qualitative Outcomes}} \\
+Participants Preferring Condition & count & 2 / 3 & 1 / 3 \\
+Cohen's $\kappa$ (inter-rater agreement on themes) & agreement statistic & \multicolumn{2}{c}{$\kappa = 0.78$ (substantial agreement)} \\
+\bottomrule
+\multicolumn{4}{l}{\footnotesize{\textit{Note:} Median and SD are provided for small-sample transparency. No statistical significance tests}} \\
+\multicolumn{4}{l}{\footnotesize{are reported due to the pilot nature of the study. All metrics are reported to support reproducibility.}} \\
+\end{tabular}
+\end{table*}
+
+\section{Key Observations}
+\label{appendix:observations}
+
+\begin{enumerate}
+\item \textbf{Adaptability Trade-off:} While the adaptive system significantly improved perceived adaptability (2.33-point increase on 5-point Likert scale), two of three participants still preferred the scripted condition for perceived smoothness and reduced cognitive load.
+
+\item \textbf{Latency Impact:} The 25-second increase in total session duration (approximately 5\% longer) was primarily attributable to LLM reasoning cycles. Each adaptive response incurred $\approx2$--3 seconds of latency, which was acceptable for stretching routines but may be problematic for safety-critical domains.
+
+\item \textbf{Knowledge Source Utilization:} Over 68\% of adaptive reasoning cycles were successfully grounded in the curated domain-specific knowledge graph, indicating good coverage for common stretching scenarios. The 32\% fallback to ConceptNet suggests that hybrid knowledge sources (curated + commonsense) are valuable for handling diverse user states and environmental contexts.
+
+\item \textbf{Verification Mechanism Value:} The secondary verification LLM corrected approximately 1 in 8 primary LLM outputs, mostly to adjust conversational tone or clarify action formatting. This suggests that verification adds meaningful safety value without imposing excessive computational overhead.
+
+\item \textbf{User Preference Heterogeneity:} The divergence in user preferences (2 favoring scripted, 1 favoring adaptive) underscores that optimal interaction paradigm may be user-dependent, motivating future work on adaptive mode selection.
+\end{enumerate}
+
+\section{Reproducibility Checklist}
+\label{appendix:reproducibility}
+
+To support future reproduction and extension of this work, we provide the following resources:
+
+\begin{itemize}
+\item \textbf{Software:} Complete ROS2 configuration, perception pipeline scripts, reasoning engine implementation, and experimental control code (GitHub link to be provided upon publication).
+\item \textbf{Hardware Specifications:} Detailed sensor calibration parameters, camera intrinsic matrix, hand-eye transformation matrix, and force/torque sensor specifications.
+\item \textbf{Knowledge Graph:} JSON file containing all 15 entities, 40+ relations, and actionability flags (GitHub repository).
+\item \textbf{Experimental Data:} Anonymized participant ratings in spreadsheet format, anonymized interview transcripts, and derived latency/performance statistics.
+\item \textbf{Protocol Documentation:} Complete study protocol including recruitment criteria, informed consent forms (de-identified), questionnaire instruments, and interview guide.
+\end{itemize}
+
+All resources will be made available subject to a simple data use agreement to ensure continued ethical oversight and appropriate attribution.
+

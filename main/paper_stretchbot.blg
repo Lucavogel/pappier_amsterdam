@@ -5,44 +5,44 @@ The style file: sn-basic.bst
 Database file #1: ../references/paper_stretchbot.bib
 sn-basic.bst [2024/07/19 v1.1 bibliography style]
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-You've used 28 entries,
+You've used 25 entries,
             3567 wiz_defined-function locations,
-            837 strings with 9345 characters,
-and the built_in function-call counts, 10341 in all, are:
-= -- 946
-> -- 280
-< -- 28
-+ -- 112
-- -- 84
-* -- 533
-:= -- 1822
-add.period$ -- 26
-call.type$ -- 28
-change.case$ -- 194
-chr.to.int$ -- 28
-cite$ -- 28
-duplicate$ -- 838
-empty$ -- 811
-format.name$ -- 112
-if$ -- 2037
+            898 strings with 13717 characters,
+and the built_in function-call counts, 27140 in all, are:
+= -- 2515
+> -- 1677
+< -- 19
++ -- 600
+- -- 529
+* -- 2397
+:= -- 3962
+add.period$ -- 34
+call.type$ -- 25
+change.case$ -- 382
+chr.to.int$ -- 25
+cite$ -- 25
+duplicate$ -- 1666
+empty$ -- 1764
+format.name$ -- 600
+if$ -- 5625
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 140
-newline$ -- 93
-num.names$ -- 112
-pop$ -- 372
+missing$ -- 179
+newline$ -- 84
+num.names$ -- 100
+pop$ -- 814
 preamble$ -- 1
-purify$ -- 140
+purify$ -- 329
 quote$ -- 0
-skip$ -- 337
+skip$ -- 754
 stack$ -- 0
-substring$ -- 364
-swap$ -- 250
-text.length$ -- 0
+substring$ -- 1869
+swap$ -- 496
+text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 252
+type$ -- 225
 warning$ -- 0
-while$ -- 84
+while$ -- 131
 width$ -- 0
-write$ -- 286
+write$ -- 301

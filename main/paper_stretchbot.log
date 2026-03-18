@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2026.2.21)  17 MAR 2026 12:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2026.2.6)  18 MAR 2026 07:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -571,20 +571,20 @@ LaTeX Info: Redefining \nameref on input line 20.
 \@outlinefile=\write3
 \openout3 = `paper_stretchbot.out'.
 
-LaTeX Font Info:    Calculating math sizes for size <12.045> on input line 45.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 45.
+LaTeX Font Info:    Calculating math sizes for size <12.045> on input line 46.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 46.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 45.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 46.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 45
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 46
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
@@ -592,23 +592,23 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <8.43146> not available
-(Font)              size <8> substituted on input line 45.
+(Font)              size <8> substituted on input line 46.
 
-LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 45
+LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 46
 .
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <5.52061> not available
-(Font)              size <6> substituted on input line 45.
+(Font)              size <6> substituted on input line 46.
 
-LaTeX Font Info:    Calculating math sizes for size <10.03749> on input line 45
+LaTeX Font Info:    Calculating math sizes for size <10.03749> on input line 46
 .
 
-Underfull \hbox (badness 1436) in paragraph at lines 49--50
+Underfull \hbox (badness 1436) in paragraph at lines 50--51
 \OT1/cmr/m/n/10 Robotic sys-tems are increas-ingly deployed in
  []
 
 
-Underfull \hbox (badness 1226) in paragraph at lines 51--52
+Underfull \hbox (badness 1226) in paragraph at lines 52--53
 []\OT1/cmr/m/n/10 The fun-da-men-tal chal-lenge lies in bal-anc-
  []
 
@@ -624,19 +624,24 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 
 ]
-Underfull \hbox (badness 1609) in paragraph at lines 55--56
+Underfull \hbox (badness 1609) in paragraph at lines 56--57
 []\OT1/cmr/m/n/10 StretchBot inte-grates per-cep-tion, com-mon-
  []
 
 
-Underfull \hbox (badness 1248) in paragraph at lines 55--56
+Underfull \hbox (badness 1248) in paragraph at lines 56--57
 \OT1/cmr/m/n/10 sense rea-son-ing, and inter-ac-tion con-trol in a
  []
 
 
-Underfull \hbox (badness 1178) in paragraph at lines 61--62
+Underfull \hbox (badness 1178) in paragraph at lines 62--63
 \OT1/cmr/m/n/10 edge graph), \OT1/cmr/m/it/10.03749 STT \OT1/cmr/m/n/10 (speech
 -to-text), and \OT1/cmr/m/it/10.03749 TTS
+ []
+
+
+Underfull \hbox (badness 1694) in paragraph at lines 94--96
+\OT1/cmr/m/n/10 Robots have been explored as assis-tants for
  []
 
 
@@ -648,19 +653,29 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [2]
-Underfull \hbox (badness 1694) in paragraph at lines 93--94
-\OT1/cmr/m/n/10 Robots have been explored as assis-tants for
+Underfull \hbox (badness 1281) in paragraph at lines 101--102
+\OT1/cmr/m/n/10 and action fea-si-bil-ity. In Stretch-Bot's design,
  []
 
 
-Underfull \hbox (badness 1742) in paragraph at lines 115--116
+Underfull \hbox (badness 1424) in paragraph at lines 113--114
+\OT1/cmr/m/n/10 to gen-er-ate fea-si-ble action plans. Sub-se-quent
+ []
+
+
+Underfull \hbox (badness 1472) in paragraph at lines 113--114
+\OT1/cmr/m/n/10 to assis-tive robotics by cou-pling open-weight
+ []
+
+
+Underfull \hbox (badness 1742) in paragraph at lines 117--118
 \OT1/cmr/m/n/10 StretchBot is struc-tured around a four-stage
  []
 
-<../images/figure1_pipeline.png, id=284, 873.2625pt x 526.96875pt>
+<../images/figure1_pipeline.png, id=293, 873.2625pt x 526.96875pt>
 File: ../images/figure1_pipeline.png Graphic file (type png)
 <use ../images/figure1_pipeline.png>
-Package pdftex.def Info: ../images/figure1_pipeline.png  used on input line 119
+Package pdftex.def Info: ../images/figure1_pipeline.png  used on input line 121
 .
 (pdftex.def)             Requested size: 418.82372pt x 252.74109pt.
 
@@ -672,41 +687,46 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [3]
-Underfull \hbox (badness 1584) in paragraph at lines 137--138
+Underfull \hbox (badness 3281) in paragraph at lines 136--138
+\OT1/cmr/m/n/10 The code-base includes three emotion-related
+ []
+
+
+Underfull \hbox (badness 1584) in paragraph at lines 139--140
 []\OT1/cmr/m/it/10.03749 Facial emo-tion recog-ni-tion\OT1/cmr/m/n/10 |using De
 ep-Face
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 138--139
+Underfull \hbox (badness 10000) in paragraph at lines 140--141
 []\OT1/cmr/m/it/10.03749 Text-based emo-tion recog-ni-tion\OT1/cmr/m/n/10 |usin
 g a
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 138--139
+Underfull \hbox (badness 10000) in paragraph at lines 140--141
 \OT1/cmr/m/n/10 lightweight Hug-ging-Face model [[]] on
  []
 
 
-Underfull \hbox (badness 1817) in paragraph at lines 152--153
+Underfull \hbox (badness 1817) in paragraph at lines 155--156
 []\OT1/cmr/m/it/10.03749 Touch-your-toes. \OT1/cmr/m/n/10 The sys-tem com-putes
  the
  []
 
 
-Overfull \hbox (13.13701pt too wide) detected at line 156
+Overfull \hbox (13.13701pt too wide) detected at line 159
 [][]\OML/cmm/m/it/10.03749 d[] \OT1/cmr/m/n/10 = [] \OML/cmm/m/it/10.03749 ;
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 163--165
+Underfull \hbox (badness 10000) in paragraph at lines 166--168
 \OT1/cmr/m/n/10 where the $\OML/cmm/m/it/10.03749 y$\OT1/cmr/m/n/10 -axis inver
 -sion accounts for
  []
 
 
-Underfull \hbox (badness 1406) in paragraph at lines 163--165
+Underfull \hbox (badness 1406) in paragraph at lines 166--168
 \OT1/cmr/m/n/10 OpenCV's top-down coor-di-nate ori-gin. The
  []
 
@@ -719,17 +739,17 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [4]
-Underfull \hbox (badness 1087) in paragraph at lines 172--173
+Underfull \hbox (badness 1087) in paragraph at lines 175--176
 []\OT1/cmr/m/n/10 All pose checks are purely geo-met-ric and
  []
 
 
-Underfull \hbox (badness 2326) in paragraph at lines 177--178
-\OT1/cmr/m/n/10 STT tran-script. This pack-age oper-a-tional-izes
+Underfull \hbox (badness 1953) in paragraph at lines 181--182
+\OT1/cmr/m/n/10 include detected objects, task exe-cu-tion sta-
  []
 
 
-Underfull \hbox (badness 1616) in paragraph at lines 181--182
+Underfull \hbox (badness 1616) in paragraph at lines 185--186
 \OT1/cmr/m/n/10 In Figure [][]1[][], this mod-ule is the upper-right
  []
 
@@ -742,13 +762,8 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [5 <../images/figure1_pipeline.png>]
-Underfull \hbox (badness 1565) in paragraph at lines 215--216
+Underfull \hbox (badness 1565) in paragraph at lines 220--221
 \OT1/cmr/m/n/10 a natural-language sen-tence. The action pre-
- []
-
-
-Underfull \hbox (badness 1661) in paragraph at lines 228--229
-[]\OT1/cmr/m/n/10 Joint lim-its and veloc-ity clamp-ing pre-vent
  []
 
 
@@ -760,70 +775,40 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [6]
-Underfull \hbox (badness 1028) in paragraph at lines 257--258
+Underfull \hbox (badness 1661) in paragraph at lines 233--234
+[]\OT1/cmr/m/n/10 Joint lim-its and veloc-ity clamp-ing pre-vent
+ []
+
+
+Underfull \hbox (badness 1028) in paragraph at lines 263--264
 \OT1/cmr/m/n/10 to coor-di-nate com-mu-ni-ca-tion between per-cep-
  []
 
 
-Underfull \hbox (badness 3078) in paragraph at lines 260--261
+Underfull \hbox (badness 3078) in paragraph at lines 266--267
 []\OT1/cmr/bx/n/10.03749 Perception: \OT1/cmr/m/n/10 YOLOv8n (``You Only Look
  []
 
 
-Underfull \hbox (badness 1314) in paragraph at lines 260--261
+Underfull \hbox (badness 1314) in paragraph at lines 266--267
 \OT1/cmr/m/n/10 ton land-mark extrac-tion and pose ver-i-fi-ca-
  []
 
 
-Underfull \hbox (badness 2409) in paragraph at lines 261--262
-\OT1/cmr/m/n/10 large lan-guage mod-els served through the
+Underfull \hbox (badness 1052) in paragraph at lines 268--269
+[]\OT1/cmr/bx/n/10.03749 Execution: \OT1/cmr/m/n/10 ROS2 com-mand pub-lish-ing 
+for
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--263
-[]\OT1/cmr/bx/n/10.03749 Execution: \OT1/cmr/m/n/10 MoveIt 2 for tra-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 262--263
-\OT1/cmr/m/n/10 jec-tory plan-ning; \OT1/cmr/bx/n/10.03749 Vosk \OT1/cmr/m/n/10
- with the
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 262--263
-\OT1/cmtt/m/n/10.03749 vosk-model-small-en-us-0.15 \OT1/cmr/m/n/10 acous-tic
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 262--263
-\OT1/cmr/m/n/10 (Google Text-to-Speech Python library)
- []
-
-
-Underfull \hbox (badness 1728) in paragraph at lines 262--263
-\OT1/cmr/m/n/10 for stan-dard speech syn-the-sis and a Hug-
- []
-
-
-Underfull \hbox (badness 1308) in paragraph at lines 262--263
-\OT1/cmr/m/n/10 ging-Face Gra-dio TTS space for expres-sive,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 264--265
+Underfull \hbox (badness 10000) in paragraph at lines 270--271
 \OT1/cmr/m/n/10 with a ded-i-cated node (\OT1/cmtt/m/n/10.03749 llm[]commander\
 OT1/cmr/m/n/10 )
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 264--265
+Underfull \hbox (badness 10000) in paragraph at lines 270--271
 \OT1/cmr/m/n/10 pub-lish-ing sym-bolic com-mands on the
- []
-
-
-Underfull \hbox (badness 1231) in paragraph at lines 267--268
-\OT1/cmr/m/n/10 Python thread, con-tin-u-ously accept-ing speech
  []
 
 
@@ -835,75 +820,93 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 276--284
+Underfull \hbox (badness 10000) in paragraph at lines 282--290
 []\OT1/cmtt/m/n/9 You are a friendly and empathetic
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 276--284
+Underfull \hbox (badness 10000) in paragraph at lines 282--290
 \OT1/cmtt/m/n/9 Detected objects in the room are:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 276--284
+Underfull \hbox (badness 10000) in paragraph at lines 282--290
 \OT1/cmtt/m/n/9 The current exercise is [exercise[]name],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 276--284
+Underfull \hbox (badness 10000) in paragraph at lines 282--290
 \OT1/cmtt/m/n/9 Use one of these action prefixes when
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 276--284
+Underfull \hbox (badness 10000) in paragraph at lines 282--290
 \OT1/cmtt/m/n/9 Respond naturally, adapting your tone to
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--292
-[]\OT1/cmr/m/it/10.03749 Entity-Property rela-tions: \OT1/cmtt/m/n/10.03749 (co
-ffee,
+Underfull \hbox (badness 10000) in paragraph at lines 301--302
+[]\OT1/cmr/m/it/10.03749 Environmental Objects\OT1/cmr/m/n/10 : \OT1/cmtt/m/n/1
+0.03749 Coffee\OT1/cmr/m/n/10 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--292
-\OT1/cmtt/m/n/10.03749 hasAffect, energizes)\OT1/cmr/m/n/10 , \OT1/cmtt/m/n/10.
-03749 (water,
+Underfull \hbox (badness 10000) in paragraph at lines 302--303
+[]\OT1/cmr/m/it/10.03749 Actions\OT1/cmr/m/n/10 : \OT1/cmtt/m/n/10.03749 DrinkW
+ater\OT1/cmr/m/n/10 , \OT1/cmtt/m/n/10.03749 DrinkCoffee\OT1/cmr/m/n/10 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 292--293
-[]\OT1/cmr/m/it/10.03749 Emotion-Response rela-tions: \OT1/cmtt/m/n/10.03749 (t
-ired,
+Underfull \hbox (badness 10000) in paragraph at lines 302--303
+\OT1/cmtt/m/n/10.03749 EatBanana\OT1/cmr/m/n/10 , \OT1/cmtt/m/n/10.03749 TakeBr
+eak\OT1/cmr/m/n/10 , \OT1/cmtt/m/n/10.03749 StopExercise\OT1/cmr/m/n/10 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 292--293
-\OT1/cmtt/m/n/10.03749 suggests, break)\OT1/cmr/m/n/10 , \OT1/cmtt/m/n/10.03749
- (tired, suggests,
+Underfull \hbox (badness 10000) in paragraph at lines 303--304
+[]\OT1/cmr/m/it/10.03749 Abstract Con-cepts\OT1/cmr/m/n/10 : BodyTem-per-a-ture
+,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 293--294
-[]\OT1/cmr/m/it/10.03749 Exercise-Benefit rela-tions: \OT1/cmtt/m/n/10.03749 (a
-rm[]stretch,
+Underfull \hbox (badness 10000) in paragraph at lines 303--304
+\OT1/cmr/m/n/10 BodyRe-lax-ation, Per-for-mance, Moti-va-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 294--295
-[]\OT1/cmr/m/it/10.03749 Affordance rela-tions: \OT1/cmtt/m/n/10.03749 (coffee,
- usedFor,
+Underfull \hbox (badness 10000) in paragraph at lines 309--310
+[]\OT1/cmr/m/it/10.03749 Causal rela-tions\OT1/cmr/m/n/10 : \OT1/cmtt/m/n/10.03
+749 causes\OT1/cmr/m/n/10 , \OT1/cmtt/m/n/10.03749 reduces\OT1/cmr/m/n/10 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 294--295
-\OT1/cmtt/m/n/10.03749 energy[]boost)\OT1/cmr/m/n/10 , \OT1/cmtt/m/n/10.03749 (
-wall, usedFor,
+Underfull \hbox (badness 10000) in paragraph at lines 309--310
+\OT1/cmtt/m/n/10.03749 increases \OT1/cmr/m/n/10 (e.g., \OT1/cmtt/m/n/10.03749 
+fatigue -> reduces ->
  []
 
 
-Underfull \hbox (badness 1215) in paragraph at lines 313--314
-\OT1/cmr/m/n/10 We con-ducted a proof-of-concept com-par-a-tive
+Underfull \hbox (badness 3271) in paragraph at lines 310--311
+[]\OT1/cmr/m/it/10.03749 Affordance and util-ity rela-tions\OT1/cmr/m/n/10 : \O
+T1/cmtt/m/n/10.03749 affords\OT1/cmr/m/n/10 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 311--312
+[]\OT1/cmr/m/it/10.03749 State and tax-on-omy rela-tions\OT1/cmr/m/n/10 : \OT1/
+cmtt/m/n/10.03749 is[]a\OT1/cmr/m/n/10 ,
+ []
+
+
+Underfull \hbox (badness 5817) in paragraph at lines 312--313
+[]\OT1/cmr/m/it/10.03749 Session and rou-tine rela-tions\OT1/cmr/m/n/10 : \OT1/
+cmtt/m/n/10.03749 contains\OT1/cmr/m/n/10 ,
+ []
+
+
+Underfull \hbox (badness 7326) in paragraph at lines 315--316
+\OT1/cmtt/m/n/10.03749 -> motivates -> DrinkWater \OT1/cmr/m/n/10 and object-to
+-
  []
 
 
@@ -915,28 +918,15 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [8]
-Underfull \hbox (badness 1852) in paragraph at lines 331--332
+Underfull \hbox (badness 1215) in paragraph at lines 338--340
+\OT1/cmr/m/n/10 We con-ducted a proof-of-concept com-par-a-tive
+ []
+
+
+Underfull \hbox (badness 1852) in paragraph at lines 357--358
 \OT1/cmr/m/n/10 robot's object sug-ges-tions? (1{5, N/A for
  []
 
-
-Underfull \hbox (badness 4391) in paragraph at lines 364--365
-\OT1/cmr/m/n/10 Given the small pilot sam-ple ($\OML/cmm/m/it/10.03749 N \OT1/c
-mr/m/n/10 = 3$),
- []
-
-
-Underfull \hbox (badness 2573) in paragraph at lines 370--371
-[]\OT1/cmr/bx/n/10.03749 Adaptability: \OT1/cmr/m/n/10 In our small sam-ple, th
-e
- []
-
-<../images/figure3_results.png, id=367, 804.00375pt x 450.68375pt>
-File: ../images/figure3_results.png Graphic file (type png)
-<use ../images/figure3_results.png>
-Package pdftex.def Info: ../images/figure3_results.png  used on input line 380.
-
-(pdftex.def)             Requested size: 400.617pt x 224.56422pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -946,13 +936,31 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [9]
-Underfull \hbox (badness 1406) in paragraph at lines 393--394
+Underfull \hbox (badness 4391) in paragraph at lines 391--392
+\OT1/cmr/m/n/10 Given the small pilot sam-ple ($\OML/cmm/m/it/10.03749 N \OT1/c
+mr/m/n/10 = 3$),
+ []
+
+
+Underfull \hbox (badness 2073) in paragraph at lines 397--398
+[]\OT1/cmr/bx/n/10.03749 Adaptability: \OT1/cmr/m/n/10 In this small sam-ple, t
+he
+ []
+
+<../images/figure3_results.png, id=389, 804.00375pt x 450.68375pt>
+File: ../images/figure3_results.png Graphic file (type png)
+<use ../images/figure3_results.png>
+Package pdftex.def Info: ../images/figure3_results.png  used on input line 407.
+
+(pdftex.def)             Requested size: 400.617pt x 224.56422pt.
+
+Underfull \hbox (badness 1406) in paragraph at lines 420--421
 \OT1/cmr/bx/n/10.03749 Preference: \OT1/cmr/m/n/10 Two par-tic-i-pants (P2, P3)
  pre-
  []
 
 
-Underfull \hbox (badness 6220) in paragraph at lines 397--398
+Underfull \hbox (badness 6220) in paragraph at lines 424--425
 []\OT1/cmr/bx/n/10.03749 Strengths of Scripted Sys-tem: \OT1/cmr/m/n/10 The
  []
 
@@ -964,9 +972,20 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []| []
  []
 
-[10 <../images/figure3_results.png>]
-Underfull \hbox (badness 1005) in paragraph at lines 425--426
-\OT1/cmr/m/n/10 domain-specific knowl-edge alone is insuf-fi-cient
+[10]
+Underfull \hbox (badness 2111) in paragraph at lines 443--444
+\OT1/cmr/m/n/10 mul-ti-modal affect cues were explored, but
+ []
+
+
+Underfull \hbox (badness 2922) in paragraph at lines 445--447
+\OT1/cmr/m/n/10 safety inci-dents were observed dur-ing the
+ []
+
+
+Underfull \hbox (badness 5231) in paragraph at lines 455--456
+\OT1/cmr/bx/n/10.03749 Dimension-Specific Effec-tive-ness: \OT1/cmr/m/n/10 In t
+he
  []
 
 
@@ -977,40 +996,45 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []| []
  []
 
-[11]
-Underfull \hbox (badness 2057) in paragraph at lines 450--451
+[11 <../images/figure3_results.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 459--460
+[]\OT1/cmr/bx/n/10.03749 LLM Ver-i-fi-ca-tion Mech-a-nisms:
+ []
+
+
+Underfull \hbox (badness 4621) in paragraph at lines 459--460
+\OT1/cmr/m/n/10 Exploratory runs sug-gest that a sec-ondary
+ []
+
+
+Underfull \hbox (badness 2753) in paragraph at lines 459--460
+\OT1/cmr/m/n/10 ver-i-fier can improve for-mat con-sis-tency and
+ []
+
+
+Underfull \hbox (badness 5741) in paragraph at lines 459--460
+\OT1/cmr/m/n/10 con-ver-sa-tional appro-pri-ate-ness. How-ever, the
+ []
+
+
+Underfull \hbox (badness 2057) in paragraph at lines 482--483
 []\OT1/cmr/bx/n/10.03749 Short Inter-ac-tion Dura-tion: \OT1/cmr/m/n/10 The 8{1
 0
  []
 
 
-Underfull \hbox (badness 1484) in paragraph at lines 450--451
+Underfull \hbox (badness 1484) in paragraph at lines 482--483
 \OT1/cmr/m/n/10 minute stretch-ing rou-tines do not cap-ture
  []
 
 
-Underfull \hbox (badness 1735) in paragraph at lines 463--464
-[]\OT1/cmr/m/n/10 For assis-tive robotics specif-i-cally, the key
+Underfull \hbox (badness 1983) in paragraph at lines 486--487
+\OT1/cmr/m/n/10 ing relies on LLMs accessed via exter-nal
  []
 
 
-Underfull \hbox (badness 1009) in paragraph at lines 474--475
-[]\OT1/cmr/bx/n/10.03749 Separate safety from style: \OT1/cmr/m/n/10 Keep hard
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 474--475
-\OT1/cmr/m/n/10 safety con-straints deter-min-is-tic (motion
- []
-
-
-Underfull \hbox (badness 3291) in paragraph at lines 474--475
-\OT1/cmr/m/n/10 bounds, for-bid-den actions) while allow-ing
- []
-
-
-Underfull \hbox (badness 5077) in paragraph at lines 483--484
-\OT1/cmr/m/n/10 This paper pre-sented Stretch-Bot, a neuro-
+Underfull \hbox (badness 1661) in paragraph at lines 486--487
+\OT1/cmr/m/n/10 mod-els (DeepSeek-R1, Llama-3.3-Nemotron-
  []
 
 
@@ -1022,40 +1046,41 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [12]
-Underfull \hbox (badness 1472) in paragraph at lines 498--499
-\OT1/cmr/m/n/10 and edge infer-ence to reduce latency and
+Underfull \hbox (badness 1735) in paragraph at lines 495--496
+[]\OT1/cmr/m/n/10 For assis-tive robotics specif-i-cally, the key
  []
 
 
-Underfull \hbox (badness 1635) in paragraph at lines 500--501
-[]\OT1/cmr/bx/n/10.03749 Automated KG Con-struc-tion: \OT1/cmr/m/n/10 Develop
+Underfull \hbox (badness 1009) in paragraph at lines 506--507
+[]\OT1/cmr/bx/n/10.03749 Separate safety from style: \OT1/cmr/m/n/10 Keep hard
  []
 
 
-Underfull \hbox (badness 1117) in paragraph at lines 500--501
-\OT1/cmr/m/n/10 meth-ods to auto-mat-i-cally build or expand
+Underfull \hbox (badness 10000) in paragraph at lines 506--507
+\OT1/cmr/m/n/10 safety con-straints deter-min-is-tic (motion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 500--501
-\OT1/cmr/m/n/10 domain-specific knowl-edge graphs from
+Underfull \hbox (badness 3291) in paragraph at lines 506--507
+\OT1/cmr/m/n/10 bounds, for-bid-den actions) while allow-ing
  []
 
 
-Underfull \hbox (badness 1635) in paragraph at lines 509--510
-\OT1/cmr/m/n/10 ity lim-i-ta-tions. How-ever, these sys-tems must
+Underfull \hbox (badness 5077) in paragraph at lines 515--516
+\OT1/cmr/m/n/10 This paper pre-sented Stretch-Bot, a neuro-
  []
 
 
-Underfull \hbox (badness 1033) in paragraph at lines 509--510
-\OT1/cmr/m/n/10 nol-ogy. This work takes a step toward prin-
+Underfull \hbox (badness 1502) in paragraph at lines 522--523
+\OT1/cmr/m/n/10 pop-u-la-tions and health con-di-tions to val-i-
  []
 
 
-Package hyperref Warning: Difference (3) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 515.
+Underfull \hbox (badness 10000) in paragraph at lines 528--529
+[]\OT1/cmr/bx/n/10.03749 On-Device Mod-els: \OT1/cmr/m/n/10 Explore quan-tized
+ []
 
-(./paper_stretchbot.bbl
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1064,29 +1089,58 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [13]
-Underfull \hbox (badness 2229) in paragraph at lines 22--24
-\OT1/cmr/m/it/10.03749 IEEE Robotics & Automa-tion Mag-a-zine\OT1/cmr/m/n/10 ,
+Underfull \hbox (badness 1635) in paragraph at lines 530--531
+[]\OT1/cmr/bx/n/10.03749 Automated KG Con-struc-tion: \OT1/cmr/m/n/10 Develop
  []
 
 
-Underfull \hbox (badness 1917) in paragraph at lines 26--29
-[]\OT1/cmr/m/n/10 Broadbent, E., Stafford, R., Mac-Don-ald,
+Underfull \hbox (badness 1490) in paragraph at lines 532--533
+\OT1/cmr/m/n/10 vid-ual user pref-er-ences for scripted ver-sus
  []
 
 
-Underfull \hbox (badness 1931) in paragraph at lines 42--44
-\OT1/cmr/m/n/10 assis-tive robotics. In \OT1/cmr/m/it/10.03749 IEEE Hand-book o
-f
+Package hyperref Warning: Difference (3) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 545.
+
+
+Underfull \hbox (badness 3118) in paragraph at lines 553--555
+\OT1/cmr/m/n/10 clinical stretching-assistance sce-nario. Par-tic-i-
  []
 
 
-Underfull \hbox (badness 2229) in paragraph at lines 102--105
-\OT1/cmr/m/it/10.03749 IEEE Robotics & Automa-tion Mag-a-zine\OT1/cmr/m/n/10 ,
+Underfull \hbox (badness 6725) in paragraph at lines 561--562
+[]\OT1/cmr/m/n/10 Anonymized pilot-level quan-ti-ta-tive sum-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--118
-\OT1/cmr/m/n/10 detec-tion. [][]$https : / / github . com / ultralytics /
+Underfull \hbox (badness 10000) in paragraph at lines 572--573
+[]\OT1/cmr/bx/n/10.03749 Luca Vogelge-sang\OT1/cmr/m/n/10 : Project con-cep-tio
+n,
+ []
+
+
+Underfull \hbox (badness 3439) in paragraph at lines 572--573
+\OT1/cmr/m/n/10 sys-tem archi-tec-ture design, imple-men-ta-tion
+ []
+
+
+Underfull \hbox (badness 1264) in paragraph at lines 572--573
+\OT1/cmr/m/n/10 of rea-son-ing mod-ule and knowl-edge graph,
+ []
+
+
+Underfull \hbox (badness 2538) in paragraph at lines 573--574
+\OT1/cmr/m/n/10 mod-ule (YOLO, emo-tion recog-ni-tion, pose
+ []
+
+
+Underfull \hbox (badness 2050) in paragraph at lines 573--574
+\OT1/cmr/m/n/10 track-ing), inte-gra-tion of mul-ti-modal sen-sor
+ []
+
+
+Underfull \hbox (badness 2310) in paragraph at lines 576--577
+\OT1/cmr/m/n/10 graph con-struc-tion, com-mon-sense rea-son-ing
  []
 
 
@@ -1097,19 +1151,162 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []| []
  []
 
-[14]
-Underfull \hbox (badness 1527) in paragraph at lines 125--126
-[]\OT1/cmr/m/n/10 Vosk Speech Recog-ni-tion (2021) [][]$https : / /
+[14] (./paper_stretchbot.bbl
+Underfull \hbox (badness 1117) in paragraph at lines 11--15
+[]\OT1/cmr/m/n/10 Aceituno-Valenzuela L, N^^Su~nez Mar-cos A,
  []
 
 
-Underfull \hbox (badness 2799) in paragraph at lines 138--141
-[]\OT1/cmr/m/n/10 Zhang, S., Roller, S., Goswami, A., et
+Underfull \hbox (badness 1033) in paragraph at lines 11--15
+\OT1/cmr/m/n/10 ized Com-put-ing 11(8):3277--3290. [][]$https : / /
  []
 
 
-Underfull \hbox (badness 4024) in paragraph at lines 138--141
-\OT1/cmr/m/n/10 al. (2022) Can retrieval-augmented lan-
+Underfull \hbox (badness 2103) in paragraph at lines 34--36
+\OT1/cmr/m/n/10 IEEE Robotics & Automa-tion Mag-a-zine
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--36
+\OT1/cmr/m/n/10 7(4):12--19. [][]$https : / / doi . org / 10 . 1109 / 100 .
+ []
+
+
+Underfull \hbox (badness 1668) in paragraph at lines 39--42
+[]\OT1/cmr/m/n/10 Broadbent E, Stafford R, Mac-Don-ald B
+ []
+
+
+Underfull \hbox (badness 3098) in paragraph at lines 39--42
+\OT1/cmr/m/n/10 Health Infor-mat-ics Jour-nal 18(2):97--106.
+ []
+
+
+Underfull \hbox (badness 2409) in paragraph at lines 54--58
+[]\OT1/cmr/m/n/10 Cao Z, Hidalgo Mar-tinez G, Simon T,
+ []
+
+
+Underfull \hbox (badness 1910) in paragraph at lines 54--58
+\OT1/cmr/m/n/10 et al (2019) Open-Pose: Real-time Multi-
+ []
+
+
+Underfull \hbox (badness 2689) in paragraph at lines 54--58
+\OT1/cmr/m/n/10 Person 2D Pose Esti-ma-tion Using Part
+ []
+
+
+Underfull \hbox (badness 1565) in paragraph at lines 54--58
+\OT1/cmr/m/n/10 na-tional Con-fer-ence on Com-puter Vision
+ []
+
+
+Underfull \hbox (badness 2042) in paragraph at lines 65--69
+\OT1/cmr/m/n/10 Emo-tion Recog-ni-tion. In: Pro-ceed-ings of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--74
+[]\OT1/cmr/m/n/10 Google Cloud (2023) Google Cloud
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--74
+\OT1/cmr/m/n/10 Speech-to-Text: Con-vert Audio to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--74
+\OT1/cmr/m/n/10 Text Using AI. URL [][]$https : / / cloud .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--74
+\OT1/cmr/m/n/10 google . com / speech-[]to-[]text$[][], avail-able at:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--86
+\OT1/cmr/m/n/10 Retrieval-Augmented Gen-er-a-tion for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--86
+\OT1/cmr/m/n/10 Knowledge-Intensive NLP Tasks. In:
+ []
+
+
+Underfull \hbox (badness 1264) in paragraph at lines 94--97
+[][]$\OT1/cmr/m/n/10 https : / / www . robotshop . com/$[][], avail-able at:
+ []
+
+
+Underfull \hbox (badness 1308) in paragraph at lines 99--102
+[]\OT1/cmr/m/n/10 Mellinger D, Kumar V (2011) Min-i-mum
+ []
+
+
+Underfull \hbox (badness 1701) in paragraph at lines 99--102
+\OT1/cmr/m/n/10 Snap Tra-jec-tory Gen-er-a-tion and Con-trol
+ []
+
+
+Underfull \hbox (badness 1609) in paragraph at lines 99--102
+\OT1/cmr/m/n/10 Con-fer-ence on Robotics and Automa-tion
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]| []
+ []
+
+[15]
+Underfull \hbox (badness 2042) in paragraph at lines 126--129
+[]\OT1/cmr/m/n/10 Sucan IA, Chitta S (2013) MoveIt: An
+ []
+
+
+Underfull \hbox (badness 4531) in paragraph at lines 136--140
+\OT1/cmr/m/n/10 ment Learn-ing. In: Pro-ceed-ings of the
+ []
+
+
+Underfull \hbox (badness 3954) in paragraph at lines 136--140
+\OT1/cmr/m/n/10 Nat-u-ral Lan-guage Pro-cess-ing (EMNLP),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 142--146
+\OT1/cmr/m/n/10 com / ultralytics / ultralytics$[][], avail-able at:
+ []
+
+
+Underfull \hbox (badness 5374) in paragraph at lines 148--151
+[]\OT1/cmr/m/n/10 Vosk Con-trib-u-tors (2021) Vosk: Offline
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 148--151
+\OT1/cmr/m/n/10 Speech Recog-ni-tion API. URL [][]$https : / /
+ []
+
+
+Underfull \hbox (badness 2334) in paragraph at lines 148--151
+\OT1/cmr/m/n/10 github . com / alphacep / vosk-[]api$[][], open-source
+ []
+
+
+Underfull \hbox (badness 4001) in paragraph at lines 154--157
+\OT1/cmr/m/n/10 Hug-ging-Face's Trans-form-ers: State-of-the-
+ []
+
+
+Underfull \hbox (badness 2042) in paragraph at lines 154--157
+\OT1/cmr/m/n/10 Art Nat-u-ral Lan-guage Pro-cess-ing. arXiv
  []
 
 )
@@ -1120,24 +1317,22 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 []| []
  []
 
-[15
-
-] (./paper_stretchbot.aux)
+[16] (./paper_stretchbot.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.47939pt have occurred.
 
 Package rerunfilecheck Info: File `paper_stretchbot.out' has not changed.
-(rerunfilecheck)             Checksum: 3603B33335417A49F0E7389360C51F5A;10555.
+(rerunfilecheck)             Checksum: 615662079A319D52391B2DA5577140D7;10996.
  ) 
 Here is how much of TeX's memory you used:
- 12242 strings out of 478287
- 189456 string characters out of 5849289
- 492571 words of memory out of 5000000
- 30090 multiletter control sequences out of 15000+600000
- 489715 words of font info for 107 fonts, out of 8000000 for 9000
+ 12241 strings out of 478287
+ 190068 string characters out of 5849290
+ 494752 words of memory out of 5000000
+ 30085 multiletter control sequences out of 15000+600000
+ 489882 words of font info for 108 fonts, out of 8000000 for 9000
  1151 hyphenation exceptions out of 8191
- 85i,8n,90p,1371b,509s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 85i,7n,90p,1221b,493s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dis
@@ -1157,10 +1352,10 @@ ype1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmtt9.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on paper_stretchbot.pdf (15 pages, 437035 bytes).
+Output written on paper_stretchbot.pdf (16 pages, 441692 bytes).
 PDF statistics:
- 556 PDF objects out of 1000 (max. 8388607)
- 490 compressed objects within 5 object streams
- 142 named destinations out of 1000 (max. 500000)
- 459 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 609 PDF objects out of 1000 (max. 8388607)
+ 541 compressed objects within 6 object streams
+ 146 named destinations out of 1000 (max. 500000)
+ 475 words of extra memory for PDF output out of 10000 (max. 10000000)
 
