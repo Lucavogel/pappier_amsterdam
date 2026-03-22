@@ -37,7 +37,7 @@
 \affil*[1]{\orgdiv{Faculty of Science, Department of Computer Science}, \orgname{Vrije Universiteit Amsterdam}, \orgaddress{\street{De Boelelaan 1081a}, \city{Amsterdam}, \postcode{1081 HV}, \country{Netherlands}}}
 
 \abstract{
-Assistive robots used in home and health settings need to adapt to user state and environmental context while preserving safe and coherent behavior. We present StretchBot, a hybrid coaching system for guided stretching routines. The implemented prototype combines a lightweight JSON knowledge graph, large language model (LLM) reasoning, object detection, and pose monitoring, with optional modules for speech and affect signals. Perception and session-state cues are assembled into a context package that is enriched with knowledge relations and used for adaptive action selection (e.g., \texttt{NEXT\_EXERCISE}, \texttt{POINT\_<OBJECT>}, \texttt{STOP\_ROUTINE}). We report a pilot proof-of-concept evaluation with three participants comparing scripted and adaptive conditions. Descriptive results suggest higher perceived adaptability and object relevance in the adaptive condition, while scripted interaction remains competitive for smoothness and predictability. These pilot-level findings support the practical value of actionable knowledge representation for grounding LLM reasoning into embodied robot behavior and motivate larger studies to evaluate generalizability and long-term outcomes.
+Assistive robots used in home and health settings need to adapt to user state and environmental context while preserving safe and coherent behavior. We present StretchBot, a hybrid coaching system for guided stretching routines. The implemented prototype combines a lightweight JSON knowledge graph, large language model (LLM) reasoning, object detection, and pose monitoring, with optional modules for speech and affect signals. Perception and session-state cues are assembled into a context package that is enriched with knowledge relations and used for adaptive action selection (e.g., \texttt{NEXT\_EXERCISE}, \texttt{POINT\_<OBJECT>}, \texttt{STOP\_ROUTINE}). We report a pilot proof-of-concept evaluation with three participants comparing scripted and adaptive conditions. Descriptive results suggest higher perceived adaptability and object relevance in the adaptive condition, while scripted interaction remains competitive for smoothness and predictability. These pilot-level findings suggest the practical potential of actionable knowledge representation for grounding LLM reasoning into embodied robot behavior and motivate larger studies to evaluate generalizability and long-term outcomes.
 }
 
 \keywords{Neuro-Symbolic AI, Large Language Models, Knowledge Graphs, Assistive Robotics, Adaptive Planning, Human-Robot Interaction}
@@ -51,15 +51,11 @@ Robotic systems are increasingly deployed in domestic and healthcare environment
 
 The fundamental challenge lies in balancing two competing demands: (1) \textit{structured predictability}—a clear script that ensures comprehensive exercise coverage and user confidence, and (2) \textit{contextual responsiveness}—real-time adaptation to the user's current state, emotions, and environment. Purely scripted systems excel at predictability but fail to personalize. Fully reactive systems can adapt but risk incoherence and repeated exercises.
 
-To address these challenges, this work investigates whether and how adaptive robotic guidance can outperform scripted routines in terms of personalization, naturalness, and contextual relevance. We examine to what extent multimodal perception combined with commonsense reasoning enables a robot to adapt its guidance to the user's state and environment. Building on this research question, we developed \textbf{StretchBot}, an adaptive robotic coach designed to guide users through a short morning stretching routine while dynamically adjusting its behavior to real-time multimodal cues.
+To address these challenges, this work investigates whether and how adaptive robotic guidance may provide perceived benefits over scripted routines in terms of personalization, naturalness, and contextual relevance. We examine to what extent multimodal perception combined with commonsense reasoning enables a robot to adapt its guidance to the user's state and environment. Building on this research question, we developed \textbf{StretchBot}, an adaptive robotic coach designed to guide users through a short morning stretching routine while dynamically adjusting its behavior to real-time multimodal cues.
 
 StretchBot integrates perception, commonsense reasoning, and interaction control in a unified architecture, enabling context-aware adaptation of stretching plans. At its core lies a \textit{hybrid reasoning module} that couples a domain knowledge graph with a large language model (LLM) for decision support \cite{Hogan2021,Speer2017}. In the codebase, an additional verifier module is available as an optional safeguard stage to check response formatting and tone before execution \cite{Thawani2021}.
 
-\subsection{Terminology and Abbreviations}
-
-Because this paper targets a general artificial intelligence readership, we briefly clarify key terms used throughout the manuscript. A \textit{knowledge graph} is a structured network of entities and relations (for example, \texttt{coffee -> reduces -> fatigue}) that supports explicit reasoning. \textit{ConceptNet} is a public commonsense knowledge base that stores broad everyday relations and is used here as a fallback when domain-specific knowledge is missing. \textit{Neuro-symbolic} refers to combining learned models (neural components) with explicit symbolic structures (rule-like or graph-based knowledge). \textit{Embodied action} means that system decisions are not only textual outputs but are executed physically by a robot in the environment.
-
-We use the following abbreviations consistently: \textit{LLM} (large language model), \textit{KG} (knowledge graph), \textit{STT} (speech-to-text), and \textit{TTS} (text-to-speech).
+To complement the technical system description, we report a small-scale pilot comparison between scripted and adaptive guidance. The goal of this preliminary study is not to provide statistically grounded validation, but to examine feasibility in real interactive sessions, collect early user impressions, and identify design trade-offs that motivate a larger controlled evaluation.
 
 \subsection{Research Questions and Contributions}
 
@@ -74,13 +70,13 @@ Our work addresses three core research questions:
 The main contributions of this work are:
 
 \begin{enumerate}
-\item An adaptive stretching robot framework integrating multimodal perception (emotion recognition, object detection, posture estimation), commonsense reasoning, and interaction control for guided physical routines.
+\item An adaptive stretching robot framework integrating object detection, pose monitoring, dialogue input, and optional multimodal perception modules (emotion recognition, speech, affect signals), coupled with commonsense reasoning and interaction control for guided physical routines.
 
 \item Integration of knowledge graph reasoning with large language model prompt design, enabling the robot to adapt exercise plans based on user state, environment, and prior interaction history.
 
 \item A collaborative interaction protocol ensuring explicit user confirmation before all actions, balancing proactive adaptation with human oversight.
 
-\item Comparative human evaluation of scripted versus adaptive guidance in a real-world stretching scenario, with quantitative ratings and qualitative feedback.
+\item An exploratory pilot evaluation comparing scripted and adaptive robot guidance, combining subjective ratings and qualitative feedback to identify early usability trade-offs in assistive stretching interactions.
 
 \item Analysis of strengths and limitations of hybrid LLM-KG planning for assistive robotics, with implications for future neuro-symbolic systems.
 \end{enumerate}
@@ -104,13 +100,14 @@ Knowledge graphs provide interpretability and structured reasoning compared to u
 
 \subsection{Multimodal Interaction in Human-Robot Interaction}
 
-Prior work has shown that combining multiple sensing modalities—spanning acoustic, visual, and physiological channels—improves the adaptability and perceived quality of human-robot interaction \cite{D'Elia2014}. For example, emotion recognition from facial expressions and vocal cues provides complementary information about user state \cite{Serengil2016}, while posture monitoring detects physical strain \cite{Cao2019}. StretchBot integrates three streams of emotional input (facial, vocal, transcript-based), posture monitoring via skeletal landmark tracking \cite{MediaPipe2020}, and environmental object detection into a unified reasoning process that supports real-time, context-aware assistance such as proposing adaptive breathing breaks or pointing to hydration aids.
-
-The fusion of multiple modalities also increases robustness: transient errors in one modality can be compensated by others, improving overall reliability.
+Prior work has shown that combining multiple sensing modalities—spanning acoustic, visual, and physiological channels—improves the adaptability and perceived quality of human-robot interaction \cite{D'Elia2014}. For example, emotion recognition from facial expressions and vocal cues provides complementary information about user state \cite{Serengil2016}, while posture monitoring detects physical strain \cite{Cao2019}. StretchBot includes optional multimodal affect channels (facial, vocal, transcript-based emotion recognition) alongside core perception components: posture monitoring via skeletal landmark tracking \cite{MediaPipe2020} and environmental object detection. In the reported pilot, reasoning and action selection were primarily driven by pose, detected objects, dialogue state, and user input, with emotional signals treated as optional context. When enabled, multimodal fusion is intended to increase robustness by combining multiple sensing channels.
 
 \subsection{LLM-Based Planning and Reasoning}
 
-Recent work has explored the use of large language models for robotic planning and decision-making \cite{AhnEtAl2022, Brown2020}. The seminal SayCan work \cite{AhnEtAl2022} combined LLM-based reasoning with affordance detection to generate feasible action plans. Subsequent research \cite{Lewis2020} has demonstrated that retrieval-augmented generation—augmenting LLMs with structured knowledge bases—improves both factual grounding and reasoning transparency. These insights have revealed that while LLMs excel at flexible, context-aware reasoning, they require grounding mechanisms to ensure that suggestions are both safe and aligned with domain constraints. StretchBot applies these principles to assistive robotics by coupling open-weight LLMs (DeepSeek-R1, Llama-3.3-Nemotron) with a domain-specific knowledge graph and a verification layer, ensuring that adaptive guidance remains safe, empathetic, and contextually appropriate.
+Recent work has explored the use of large language models for robotic planning and decision-making \cite{AhnEtAl2022, Brown2020}. The seminal SayCan work \cite{AhnEtAl2022} combined LLM-based reasoning with affordance detection to generate feasible action plans. Subsequent research \cite{Lewis2020} has demonstrated that retrieval-augmented generation—augmenting LLMs with structured knowledge bases—improves both factual grounding and reasoning transparency. These insights have revealed that while LLMs excel at flexible, context-aware reasoning, they require grounding mechanisms to keep suggestions aligned with domain constraints. StretchBot applies these principles to assistive robotics by coupling open-weight LLMs (DeepSeek-R1, Llama-3.3-Nemotron) with a domain-specific knowledge graph and an optional verification layer, grounding LLM outputs in structured knowledge and constrained action grammar to improve coherence and relevance.
+
+Our work differs from prior LLM-for-robotics approaches primarily in emphasizing an \textit{action-oriented knowledge representation} that is explicitly designed for inline runtime injection, rather than as a post-hoc context enrichment. This design allows concrete LLM outputs to be naturally mapped to embodied robot actions under lightweight but explicit constraints (action prefixes, relation filtering, object grounding), making the neuro-symbolic integration more practical and traceable for assistive tasks.
+
 \section{System Architecture}
 \label{sec:architecture}
 
@@ -123,7 +120,7 @@ StretchBot is structured around a four-stage pipeline: Perception, Reasoning, Ac
 \label{fig:overall_pipeline}
 \end{figure*}
 
-The numbered markers in Figure~\ref{fig:overall_pipeline} correspond to the operational sequence used in our implementation. Marker \textbf{(1)} denotes the multimodal input transfer from the user to the \textit{Perception} block (speech and image streams). Marker \textbf{(2)} denotes the transition from perceived user/environment state to the \textit{Reasoning} block, where KG + ConceptNet context is combined with LLM reasoning. Marker \textbf{(3)} denotes the delivery of adaptive instructions and feedback from \textit{Reasoning} to the \textit{Handler} (execution interface using actions such as \texttt{NEXT\_EXERCISE}, \texttt{POINT\_<OBJECT>}, and \texttt{STOP\_ROUTINE}). Marker \textbf{(4)} denotes the control feedback from the Handler to the \textit{Plan} block, which updates the current exercise stage and closes the adaptation loop.
+The numbered markers in Figure~\ref{fig:overall_pipeline} correspond to the operational sequence used in our implementation. Marker \textbf{(1)} denotes the multimodal input transfer from the user to the \textit{Perception} block (speech and image streams). Marker \textbf{(2)} denotes the transition from perceived user/environment state to the \textit{Reasoning} block, where knowledge-graph and ConceptNet context are combined with large language model reasoning. Marker \textbf{(3)} denotes the delivery of adaptive instructions and feedback from \textit{Reasoning} to the \textit{Handler} (execution interface using actions such as \texttt{NEXT\_EXERCISE}, \texttt{POINT\_<OBJECT>}, and \texttt{STOP\_ROUTINE}). Marker \textbf{(4)} denotes the control feedback from the Handler to the \textit{Plan} block, which updates the current exercise stage and closes the adaptation loop.
 
 \subsection{Perception Module}
 
@@ -141,6 +138,17 @@ The codebase includes three emotion-related channels:
 \end{itemize}
 
 In pilot runs, these channels were explored as optional context signals. The currently reported prototype behavior relies primarily on object/pose context and dialogue state, with emotion fusion treated as a configurable extension.
+When enabled, emotion integration follows a late-fusion scheme: each channel provides an emotion prediction, reliability weights are applied across channels, and one aggregated emotion label is produced. This single fused label is then forwarded to the LLM context, rather than passing three potentially conflicting emotion outputs independently.
+Let $m \in \{v,f,t\}$ denote the voice, facial, and text channels, and let $p_m(e)$ be the confidence assigned by channel $m$ to emotion class $e$. With non-negative reliability weights $w_m$, the fused score is computed as:
+\begin{equation}
+S(e)=\frac{\sum_{m \in \{v,f,t\}} w_m\,p_m(e)}{\sum_{m \in \{v,f,t\}} w_m},
+\label{eq:emotion_fusion}
+\end{equation}
+and the final emotion sent to the reasoning module is selected by
+\begin{equation}
+\hat{e}=\arg\max_e\, S(e).
+\label{eq:emotion_argmax}
+\end{equation}
 % TODO(method-emotion): Confirm which emotion channels were active in the reported pilot sessions and update this subsection if a strict fusion protocol was used.
 
 \subsubsection{Task Monitoring}
@@ -168,14 +176,14 @@ where the $y$-axis inversion accounts for OpenCV's top-down coordinate origin. T
 \end{itemize}
 
 \paragraph{Hold-duration accumulation and reset.}
-At each valid frame the hold timer is incremented by the fixed frame period $\Delta t = 1/30\,\text{s}$, capped at the target duration $T = 5\,\text{s}$. If the user holds an invalid pose for longer than a reset tolerance of $t_\text{reset} = 40\,\text{s}$, the timer is zeroed and corrective spoken feedback is issued via the TTS channel. Once the timer reaches $T$, the task monitor emits a success event that propagates via markers \textbf{(3)} and \textbf{(4)} in Figure~\ref{fig:overall_pipeline}.
+At each valid frame the hold timer is incremented by the fixed frame period $\Delta t = 1/30\,\text{s}$, capped at the target duration $T = 5\,\text{s}$. If the user holds an invalid pose for longer than a reset tolerance of $t_\text{reset} = 40\,\text{s}$, the timer is zeroed and corrective spoken feedback is issued via the text-to-speech (TTS) channel. Once the timer reaches $T$, the task monitor emits a success event that propagates via markers \textbf{(3)} and \textbf{(4)} in Figure~\ref{fig:overall_pipeline}.
 
 For the lateral lean exercise, two independent timers track the left-side and right-side hold durations; both must reach $T = 5\,\text{s}$ before the exercise is marked complete.
 
 All pose checks are purely geometric and frame-local, requiring no additional training data beyond the pre-trained MediaPipe model.
 
 \subsubsection{Speech-to-Text (STT)}
-The codebase includes a Vosk-based STT component for local/offline speech transcription \cite{Vosk2021}. Google Cloud Speech-to-Text was considered as an alternative in early exploration \cite{GoogleSTT2023}. In the pilot runtime reported here, text input was used as a robust fallback during interactive testing.
+The codebase includes a Vosk-based STT component for local/offline speech transcription \cite{Vosk2021}. We selected Vosk for initial low-cost experimentation because it can be used locally without paid API calls. Google Cloud Speech-to-Text was considered as a strong alternative in early exploration \cite{GoogleSTT2023}, especially for potentially higher transcription robustness in real-world conditions; in a cloud setup, pairing stronger STT with neural TTS can also improve the overall perceived naturalness of interaction. In the pilot runtime reported here, text input was used as a robust fallback during interactive testing.
 % TODO(method-stt): Confirm whether any reported pilot sessions used live STT end-to-end; if yes, document exact session count and setup.
 
 Perception and interaction outputs are structured into a unified context package that can include detected objects, task execution status, dialogue input (typed or transcribed), and optional affect cues. This package operationalizes marker \textbf{(1)} and is transmitted to the reasoning block through marker \textbf{(2)} in Figure~\ref{fig:overall_pipeline}.
@@ -189,12 +197,42 @@ In Figure~\ref{fig:overall_pipeline}, this module is the upper-right block that 
 Each time the user speaks, the reasoning module compiles an updated context package including:
 \begin{itemize}
 \item the list of objects detected by perception,
-\item the aggregated emotional state,
+\item the aggregated emotional state (single fused label when multimodal affect is enabled),
 \item the current exercise progress status,
 \item the latest speech-to-text transcription.
 \end{itemize}
 
-To provide the LLM with meaningful background knowledge, this raw context is enriched with semantic relations retrieved from a Knowledge Graph (KG). A knowledge graph is a structured representation of concepts (nodes) and their relationships (edges), often expressed as triples such as (coffee, reduces, fatigue) \cite{Hogan2021,Speer2017}. Unlike unstructured text, a KG enables the system to reason over entities and their connections in a transparent and interpretable way.
+To provide the LLM with meaningful background knowledge, this raw context is enriched with semantic relations retrieved from a knowledge graph (KG). A KG is a structured representation of entities and their relations, used here to encode contextual and actionable knowledge relevant to assistive robot behavior \cite{Hogan2021,Speer2017}. Unlike unstructured text, a KG enables the system to reason over entities and their connections in a transparent and interpretable way.
+
+\subsubsection{Retrieval and Decision Policy (Implementation-Level)}
+
+To make the adaptive core explicit, we summarize the runtime policy used in the pilot code.
+
+\paragraph{LLM-call trigger.}
+The reasoning cycle is activated when either (i) new user input is available or (ii) the current pose-monitoring status becomes \texttt{success}. If neither condition is true, the system continues low-level pose monitoring without issuing a new LLM call.
+
+\paragraph{Concept set and KG query timing.}
+At each triggered cycle $t$, the candidate concept set is assembled as:
+\begin{equation}
+\mathcal{C}_t = \mathcal{C}_{\text{domain}} \cup \mathcal{C}_{\text{state}}(t),
+\label{eq:concept_set}
+\end{equation}
+where $\mathcal{C}_{\text{domain}}$ is a fixed domain list in the pilot script (e.g., \texttt{Coffee}, \texttt{Banana}, \texttt{GlassOfWater}, \texttt{Towel}, \texttt{Chair}) and $\mathcal{C}_{\text{state}}(t)$ contains user-state terms active at time $t$. For each concept $c \in \mathcal{C}_t$, the system first searches the local JSON KG; if no matching entity exists, it falls back to ConceptNet.
+
+\paragraph{ConceptNet fallback policy.}
+Fallback retrieval is relation-filtered to a predefined subset (\texttt{UsedFor}, \texttt{Causes}, \texttt{HasProperty}, \texttt{MotivatedBy}, \texttt{IsA}) to reduce noise before prompt injection. The resulting relation bundle is serialized and passed to the LLM together with dialogue, exercise state, and detected objects.
+
+\paragraph{Deterministic checks before and after LLM.}
+Before LLM invocation, deterministic modules provide: (a) exercise-completion status from pose monitoring, (b) hold-time progress, and (c) currently detected objects. After LLM generation, a rule-based parser extracts one actionable prefix (\texttt{NEXT\_EXERCISE}, \texttt{POINT\_<OBJECT>}, or \texttt{STOP\_ROUTINE}) when present.
+
+\paragraph{Action choice with multiple detected objects.}
+When multiple objects are visible, the LLM is prompted with the full list and returns a single \texttt{POINT\_<OBJECT>} action if it chooses to point. The runtime then maps the object token to robot command names (via a fixed mapping table for known aliases) and publishes one command. No additional deterministic re-ranking across multiple candidate objects is currently applied in the pilot script.
+
+\paragraph{Hallucination and relevance safeguards.}
+The current safeguards are lightweight and layered: (1) constrained action grammar in the prompt, (2) explicit injection of observed object names, (3) action-prefix parsing before execution, and (4) an optional second-stage verifier module for format/tone correction. These mechanisms reduce malformed outputs but do not constitute a formal guarantee against all irrelevant suggestions, motivating stronger grounded decoding and verifier-by-default execution in future versions.
+
+\paragraph{Concrete reasoning example.}
+To illustrate the integrated workflow, consider this interaction cycle: (1) User says \textit{"I feel tired"} while the perception system detects a water bottle in the scene. (2) The system assembles the context package with \texttt{detected\_objects = [\texttt{GlassOfWater}]}, \texttt{user\_emotion = tired}, and \texttt{dialogue = "I feel tired"}. (3) A KG query retrieves relations: $\texttt{Fatigue} \xrightarrow{\text{DrinkWater}} \texttt{Water}$ and $\texttt{Water} \xrightarrow{\text{HasProperty}} \texttt{Refreshing}$. (4) These relations are serialized into a structured prompt: \textit{"User is tired. Objects available: water. Known relation: fatigue helps with water / water refreshes."}. (5) The LLM, prompted to adapt guidance to emotional state, generates: \texttt{POINT\_WATER Want some water to refresh?}. (6) The action prefix parser extracts \texttt{POINT\_WATER}, maps it to the robot's object-point action, and the arm points at the detected water bottle while playing the speech. (7) The cycle completes with an ``action finished'' event, allowing planning to check whether pose monitoring indicates success on the current exercise, or whether a new reasoning cycle is triggered by the next user input.
 
 \subsubsection{LLM-Based Adaptive Reasoning}
 
@@ -228,11 +266,11 @@ The final optimized trajectory is executed step by step on the Lynxmotion SES900
 In parallel with motion control, text-to-speech (TTS) converts the LLM's natural-language output into spoken instructions. The timing of speech and movement is carefully coordinated to enhance clarity and naturalness of the interaction \cite{Breazeal2000}. The system supports multiple voices, ranging from simple rule-based synthesis to expressive neural voices capable of conveying emotion \cite{VanDenOord2016}, reinforcing empathy and engagement.
 
 \subsubsection{Safety Supervision}
-A critical aspect of execution is maintaining user safety and hardware integrity. In this prototype, safety is handled through conservative command design, bounded exercise routines, and operator oversight during pilot sessions. The broader architecture is intended to support stricter runtime checks such as:
+User safety and hardware integrity are considerations in this prototype, addressed through conservative command design, bounded exercise routines, and operator oversight during pilot sessions. The broader architecture is designed to support additional runtime safeguards such as:
 \begin{itemize}
-\item Joint limits and velocity clamping prevent excessive extension or unsafe speed.
-\item Collision detection monitors the environment for potential collisions.
-\item Emergency stop immediately halts execution if anomalies are detected.
+\item Joint limits and velocity clamping constrain motion extrema.
+\item Collision detection via trajectory planning identifies potential obstacles.
+\item Emergency stop mechanism allows immediate halt if needed.
 \end{itemize}
 % TODO(safety-stack): Replace the generic safety list with the exact safety mechanisms that were active during the reported pilot.
 
@@ -266,7 +304,7 @@ StretchBot is built on a modular software architecture using Robot Operating Sys
 \item \textbf{Perception:} YOLOv8n (``You Only Look Once'', version 8, nano variant) for real-time object detection; \textbf{MediaPipe Pose} for skeleton landmark extraction and pose verification; DeepFace for facial emotion recognition; HuggingFace Transformers pipelines for voice-segment and transcript-level emotion analysis.
 \item \textbf{Reasoning:} Custom Python modules for KG retrieval and context integration; OpenRouter-served open-weight models (DeepSeek-R1 family in the pilot script, with alternative model IDs configurable in \texttt{config.py}) for LLM-based planning; optional verifier integration via the HuggingFace Inference Client.
 \item \textbf{Execution:} ROS2 command publishing for symbolic actions; local \textbf{gTTS} speech synthesis; optional \textbf{Vosk} STT (offline) and optional expressive TTS through a HuggingFace Gradio space.
-\item \textbf{Spatial Perception:} \textbf{ArUco markers} (4×4 50-dictionary, OpenCV) combined with camera calibration for metric 3-D pose estimation of objects, enabling precise pointing commands.
+\item \textbf{Spatial Grounding:} In the pilot, object positions were fixed and predefined. The repository architecture supports optional ArUco marker-based localization (4×4 50-dictionary, OpenCV) for future metric 3-D pose estimation when dynamic object tracking is required.
 \item \textbf{Hardware Communication:} ROS2 (\texttt{rclpy}) with a dedicated node (\texttt{llm\_commander}) publishing symbolic commands on the \texttt{target\_point} topic; low-level drivers for the Lynxmotion SES900 arm.
 \end{itemize}
 
@@ -319,11 +357,15 @@ The internal knowledge graph is implemented as a structured \textbf{JSON file} (
 
 \subsection{Hardware Setup}
 
-The prototype was developed for indoor assistive interaction with a camera stream, speech output, and ROS2-based action dispatch to robotic control software. The repository includes scripts for ArUco-based camera/marker calibration and ROS2 command publication for pointing actions.
+The prototype was developed for indoor assistive interaction with a camera stream, speech output, and ROS2-based action dispatch to robotic control software. In the reported pilot, object positions were predefined and fixed; the repository includes optional scripts for ArUco-based camera calibration for future deployment scenarios with dynamic object localization.
+
+\subsubsection{Cost and Compute Footprint}
+
+The pilot prototype was intentionally developed under low-budget constraints. In practice, the robotic arm represented the main hardware cost, while most of the remaining software stack relied on free or open-source components (ROS2, OpenCV, MediaPipe, and open-weight or API-accessed language models). The runtime also operated on a modest, non-high-end PC, indicating that the architecture is feasible without specialized compute hardware for proof-of-concept deployment.
 
 \subsubsection{Calibration and Spatial Referencing}
 
-Camera calibration and ArUco marker estimation were implemented using OpenCV-based scripts included in the repository. These scripts provide intrinsic calibration and marker-pose estimation for object-referenced pointing behavior.
+In the reported pilot, object positions were manually configured with fixed screen coordinates for each recognized item. This simplified approach was sufficient for the controlled setting and N=3 exploratory evaluation. For future deployment with dynamic scene changes, the repository includes OpenCV-based scripts for camera intrinsic calibration and optional ArUco marker-pose estimation to enable adaptive spatial referencing.
 % TODO(hardware-calibration): If quantitative calibration errors were measured for the reported pilot, add verified values and procedures here.
 
 \subsubsection{Experimental Environment}
@@ -335,7 +377,7 @@ The pilot sessions were conducted in a controlled indoor setting with a particip
 
 \subsection{Evaluation Design}
 
-We conducted a proof-of-concept comparative user study contrasting a scripted baseline with the adaptive system. The study design was a within-subjects pilot comparison where participants experienced both conditions.
+We conducted an exploratory proof-of-concept user study contrasting a scripted baseline with the adaptive system. The study design was a within-subjects pilot comparison where participants experienced both conditions. This evaluation is intended as an initial feasibility and user-feedback study, not as a confirmatory validation of performance differences.
 % TODO(protocol-order): Confirm and document the exact condition-order assignment (e.g., strict counterbalancing vs. partial alternation).
 
 \subsection{Participants and Protocol}
@@ -357,14 +399,6 @@ After each condition, participants completed a custom questionnaire rating the r
 \item \textbf{Object Relevance:} How relevant were the robot's object suggestions? (1–5, N/A for scripted condition)
 \end{enumerate}
 
-Additionally, we recorded:
-\begin{itemize}
-\item Task completion time (total session duration).
-\item Number of user interventions (corrections or clarifications requested).
-\item Number of LLM reasoning cycles per session.
-\item Latency of adaptive responses (time from user input to robot output).
-\end{itemize}
-
 \subsection{Qualitative Feedback}
 
 After completing both conditions, participants participated in semi-structured interviews (15–20 minutes) discussing:
@@ -375,8 +409,7 @@ After completing both conditions, participants participated in semi-structured i
 \item Overall sense of engagement and repeated-use intentions.
 \end{itemize}
 
-All interviews were recorded, transcribed, and analyzed using thematic coding by two independent raters. Inter-rater agreement was assessed using Cohen's kappa \cite{Cohen1960}, with an observed value of $\kappa = 0.78$ in our coding sheet.
-% TODO(qualitative-reliability): Verify the kappa computation record and add citation if Landis-Koch interpretation language is retained.
+Qualitative feedback was summarized from participant interviews and used to identify recurring perceptions of strengths, limitations, and user preferences between scripted and adaptive interaction modes.
 
 \subsection{Planned Analysis for a Full-Scale Study}
 
@@ -388,7 +421,9 @@ We will also report effect sizes and confidence intervals in addition to p-value
 
 \subsection{Quantitative Results}
 
-Given the small pilot sample ($N=3$), we report descriptive statistics and preliminary trends rather than inferential statistical claims.
+Because the study involved only three participants in a controlled proof-of-concept setting, the results should be viewed as preliminary evidence rather than definitive confirmation. They provide useful early indications of user-perceived trends and trade-offs, while requiring validation in larger and more diverse evaluations.
+
+The quantitative values reported below are computed from the participant Likert ratings summarized in Figure~\ref{fig:comparative_results}, where $M$ denotes the mean score and $SD$ denotes the standard deviation.
 
 \textbf{Clarity:} Both conditions received favorable ratings for clarity (Scripted: $M=4.67, SD=0.33$; Adaptive: $M=4.33, SD=0.67$). The scripted version received a slight advantage, which may be attributable to its predictability. However, with only three participants, this trend should be interpreted cautiously.
 
@@ -409,11 +444,7 @@ Given the small pilot sample ($N=3$), we report descriptive statistics and preli
 \label{fig:comparative_results}
 \end{figure*}
 
-Figure~\ref{fig:comparative_results} visualizes the rating profile of both conditions and highlights the same trend observed in the numerical analysis: the adaptive system clearly outperforms the scripted baseline on \textit{adaptivity perception} and \textit{relevance of object pointing}, while \textit{clarity} and \textit{comfort} remain similar or slightly in favor of the scripted mode. This pattern supports our main claim that adaptation improves contextual relevance, but does not automatically guarantee a smoother interaction experience.
-
-\subsection{Response Latency}
-
-Average task completion time was observed to be similar between conditions (Scripted: $M=487s, SD=31s$; Adaptive: $M=512s, SD=58s$), with the adaptive system showing slightly longer completion times, likely due to LLM reasoning overhead. In this small pilot sample, the observed latency per response remained within acceptable ranges (mean: $\approx2$--$3$ seconds). For longer routines or more complex interaction scenarios, latency optimizations may become important.
+Figure~\ref{fig:comparative_results} visualizes the rating profile of both conditions and highlights the same descriptive trend observed in the numerical analysis: in this pilot sample, the adaptive condition received higher ratings for \textit{adaptivity perception} and \textit{relevance of object pointing}, while \textit{clarity} and \textit{comfort} remained similar or slightly in favor of the scripted mode. This pattern suggests that adaptation can improve perceived contextual relevance, but does not automatically guarantee a smoother interaction experience.
 
 \subsection{Qualitative Findings}
 
@@ -440,6 +471,8 @@ The following observations emerged from the pilot implementation. However, given
 \item \textbf{LLM Verification Rate:} In exploratory runs where the verifier module was enabled, some primary outputs were reformulated (for example, tone or action-prefix normalization), suggesting potential value at additional latency cost.
 % TODO(results-verifier-rate): Insert verified correction-rate statistics only if derived from archived run logs.
 
+\item \textbf{Response Latency Under Low-Budget Setup:} In the pilot's low-budget configuration (modest local machine and API-based reasoning), response delays were sometimes noticeable and could occasionally reach roughly 3--10 seconds before coach feedback was produced. Participants generally tolerated this in a proof-of-concept context, but such pauses can reduce immersion during guided interaction.
+
 \item \textbf{Multimodal Fusion Robustness:} Optional multimodal affect cues were explored, but robust quantitative validation of fusion behavior was outside the scope of this pilot.
 
 \item \textbf{Safety Monitoring:} No adverse events or safety incidents were observed during the reported pilot sessions.
@@ -448,7 +481,7 @@ The following observations emerged from the pilot implementation. However, given
 \section{Discussion}
 \label{sec:discussion}
 
-Our results illuminate both the promise and the challenges of hybrid neuro-symbolic approaches in assistive robotics.
+This discussion interprets the pilot findings as exploratory signals rather than full empirical validation. Their main value is to show that the prototype can be deployed in interactive sessions and that participants noticed meaningful differences between scripted and adaptive behavior.
 
 \subsection{Key Findings}
 
@@ -466,11 +499,13 @@ However, our results suggest that the optimal balance may be user-dependent. Use
 
 \subsection{Multimodal Perception and Emotion Recognition}
 
-The fusion of voice, facial, and text-based emotion recognition proved robust and reduced susceptibility to single-modality failures. However, emotion recognition remains a coarse proxy for actual user state. A user might sound tired but actually be focused; facial expressions can be ambiguous. Future work should explore richer state representations combining emotion with other signals (e.g., biometric data, explicit user feedback).
+Combining voice, facial, and text-based emotion signals is intended to reduce susceptibility to single-modality failures by producing one fused affect estimate for the reasoning stage. In this pilot, multimodal affect remained an optional context component and was not the dominant adaptation driver in all runs. Moreover, emotion recognition remains a coarse proxy for actual user state: a user might sound tired but actually be focused, and facial expressions can be ambiguous. Future work should benchmark fusion weights quantitatively and combine emotion with richer signals (e.g., biometric data, explicit user feedback).
 
 \subsection{Latency and Real-Time Constraints}
 
-The adaptive system introduced approximately 25 seconds of additional latency per session compared to scripted execution (mean: $\approx2$–$3$ seconds per response). For a stretching routine, this is acceptable. However, for safety-critical applications (e.g., physical assistance or fall prevention), such latency could be problematic. Future work should explore distributed inference, model quantization, and edge computing to reduce latency.
+In the low-budget pilot setup, adaptive responses were often perceived as slower than scripted execution, with occasional delays in the 3--10 second range before coach feedback was produced. For a proof-of-concept stretching routine, this remained manageable, but these pauses can disrupt interaction flow and perceived immersion.
+
+A substantial share of this delay appeared to come from model/API communication and runtime overhead rather than low-level control loops. In future deployments, latency can likely be reduced through stronger hardware, lower-latency paid inference services, local model hosting, request batching, and lighter verification policies.
 
 \subsection{Limitations}
 
@@ -490,9 +525,9 @@ The adaptive system introduced approximately 25 seconds of additional latency pe
 
 \subsection{Implications for Neuro-Symbolic Robotics}
 
-This work demonstrates that coupling LLMs with structured knowledge representations can yield more robust and explainable planning than LLMs alone. However, the integration is non-trivial: prompt engineering, knowledge graph design, and verification mechanisms must be carefully tuned. Moreover, the added complexity may not always be necessary; in some domains, scripted systems or purely neural approaches may suffice.
+This work suggests that coupling LLMs with structured knowledge representations may offer a practical path toward more grounded and interpretable planning in assistive robotic settings. However, the integration is non-trivial: prompt engineering, knowledge graph design, and verification mechanisms must be carefully tuned. Moreover, the added complexity may not always be necessary; in some domains, scripted systems or purely neural approaches may suffice.
 
-For assistive robotics specifically, the key insight is that \textit{personalization and safety are not orthogonal}. By grounding LLM reasoning in both domain knowledge and user perception, and by adding a verification layer, we can achieve adaptation without sacrificing safety.
+For assistive robotics specifically, the key insight is that \textit{personalization and safety are not orthogonal}. By grounding LLM reasoning in domain knowledge and user perception, and by adding a verification layer, the proposed design aims to support adaptation while maintaining conservative safety constraints.
 
 \subsection{Practical Deployment Recommendations}
 
@@ -512,7 +547,7 @@ These recommendations are intended to reduce friction in user experience while p
 \section{Conclusion and Future Work}
 \label{sec:conclusion}
 
-This paper presented StretchBot, a neuro-symbolic adaptive robotic coach that integrates multimodal perception, knowledge graph reasoning, and large language models to guide personalized stretching routines. Our key contribution is a proof-of-concept demonstration of how actionable knowledge representation can be coupled with LLMs to ground robot decisions in both structured domain knowledge and real-time environmental perception.
+This paper presented StretchBot, a neuro-symbolic adaptive robotic coach that integrates multimodal perception, knowledge graph reasoning, and large language models to guide personalized stretching routines. The primary contribution is the system design and implementation of a practical neuro-symbolic pipeline for grounded assistive guidance, while the pilot user study serves as a complementary exploratory assessment of feasibility and perceived interaction trade-offs.
 
 Through a pilot user study with three participants, we explored the feasibility and user experience of adaptive versus scripted robot guidance in a stretching domain. Preliminary findings suggest that the adaptive system shows promise for improving perceived contextual relevance and environmental awareness, while scripted interaction remains competitive for perceived smoothness and predictability. These exploratory results motivate further research into user-centered design of adaptive assistive robots and suggest that the optimal interaction paradigm may be user-dependent.
 

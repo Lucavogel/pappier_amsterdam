@@ -1,15 +1,16 @@
 # Fdb version 3
-["bibtex paper_stretchbot"] 1773815022 "paper_stretchbot.aux" "paper_stretchbot.bbl" "paper_stretchbot" 1773815023
-  "../references/paper_stretchbot.bib" 1773812078 15302 50b323ee2e3712122cfe8fa3352e606f ""
-  "./sn-basic.bst" 1773806785 35515 7cc706cef7829df727b1420a5d0e9fe4 ""
-  "paper_stretchbot.aux" 1773815023 14130 75e8b36bb1497338d3108115611d2287 "pdflatex"
+["bibtex paper_stretchbot"] 1774189068 "paper_stretchbot.aux" "paper_stretchbot.bbl" "paper_stretchbot" 1774189070
+  "../references/paper_stretchbot.bib" 1774186969 15423 051f2e09126f2fcdd5c5356030e62700 ""
+  "./sn-basic.bst" 1773740270 35515 7cc706cef7829df727b1420a5d0e9fe4 ""
+  "paper_stretchbot.aux" 1774189069 15207 d6d3be2e523d43556554709a0790061d "pdflatex"
   (generated)
   "paper_stretchbot.bbl"
   "paper_stretchbot.blg"
-["pdflatex"] 1773815022 "paper_stretchbot.tex" "paper_stretchbot.pdf" "paper_stretchbot" 1773815023
-  "../images/figure1_pipeline.png" 1773806785 68033 9c93653612a468a900faecb99d01027e ""
-  "../images/figure3_results.png" 1773806785 64450 73834893f8330fe06c8d3037bda4ae60 ""
-  "/etc/texmf/web2c/texmf.cnf" 1731750063 475 c0e671620eb5563b2130f56340a5fde8 ""
+["pdflatex"] 1774189068 "/home/luca/amsterdam/pappier_amsterdam/main/paper_stretchbot.tex" "paper_stretchbot.pdf" "paper_stretchbot" 1774189070
+  "../images/figure1_pipeline.png" 1773739958 68033 9c93653612a468a900faecb99d01027e ""
+  "../images/figure3_results.png" 1773739986 64450 73834893f8330fe06c8d3037bda4ae60 ""
+  "/etc/texmf/web2c/texmf.cnf" 1764057616 475 c0e671620eb5563b2130f56340a5fde8 ""
+  "/home/luca/amsterdam/pappier_amsterdam/main/paper_stretchbot.tex" 1774189063 63866 b85130fe0906b625d26ec543960c577e ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
@@ -50,6 +51,7 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy7.tfm" 1136768653 1120 2b3f9b25605010c69bc328bea6ac000f ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti10.tfm" 1136768653 1480 aa8e34af0eb6a2941b776984cf1dfdc4 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm" 1136768653 768 1321e9409b4137d6fb428ac9dc956269 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt8.tfm" 1136768653 768 d7b9a2629a0c353102ad947dc9221d49 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt9.tfm" 1136768653 764 c98a2af25c99b73a368cf7336e255190 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm" 1229303445 688 37338d6ab346c2f1466b29e195316aa4 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/rsfs/rsfs5.tfm" 1229303445 684 3a51bd4fd9600428d5264cf25f04bb9a ""
@@ -148,13 +150,13 @@
   "/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1636152094 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb" 1636152094 138258 6525c253f16cededa14c7fd0da7f67b2 ""
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
-  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1760206561 4379155 98693266ff65f58d9f98aff394de12d2 ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1770356017 2800371 4672cc33f85b5e6d646f3323576411fd ""
-  "paper_stretchbot.aux" 1773815023 14130 75e8b36bb1497338d3108115611d2287 "pdflatex"
-  "paper_stretchbot.bbl" 1773815022 8469 3b474d367461508efff0253dc16f4536 "bibtex paper_stretchbot"
-  "paper_stretchbot.out" 1773815023 10996 615662079a319d52391b2da5577140d7 "pdflatex"
-  "paper_stretchbot.tex" 1773814842 56855 60078dadf68c07a772e847c16e1411bb ""
-  "sn-jnl.cls" 1773806785 55857 c14ef9d34b3d95356940eaf177aff85f ""
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1770563419 4379155 98693266ff65f58d9f98aff394de12d2 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1771700149 2799411 db3053b6c84f52a819fd4a085b9772e5 ""
+  "paper_stretchbot.aux" 1774189069 15207 d6d3be2e523d43556554709a0790061d "pdflatex"
+  "paper_stretchbot.bbl" 1774189068 8374 ba6006681a5c6ff663662de70e6865b1 "bibtex paper_stretchbot"
+  "paper_stretchbot.out" 1774189069 12857 480ad24f3f8d9488a778e247cac54f8a "pdflatex"
+  "paper_stretchbot.tex" 1774189063 63866 b85130fe0906b625d26ec543960c577e ""
+  "sn-jnl.cls" 1773740270 55857 c14ef9d34b3d95356940eaf177aff85f ""
   (generated)
   "paper_stretchbot.aux"
   "paper_stretchbot.log"

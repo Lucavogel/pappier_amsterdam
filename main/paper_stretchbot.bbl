@@ -1,4 +1,4 @@
-\begin{thebibliography}{25}
+\begin{thebibliography}{24}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{#1}}
 \providecommand{\urlprefix}{URL }
@@ -56,10 +56,6 @@ Cao Z, Hidalgo~Martinez G, Simon T, et~al (2019) {OpenPose: Realtime
   IEEE/CVF International Conference on Computer Vision (ICCV), pp 7291--7299,
   \doi{10.1109/ICCV.2019.00739}
 
-\bibitem[{Cohen(1960)}]{Cohen1960}
-Cohen J (1960) {A Coefficient of Agreement for Nominal Scales}. Educational and
-  Psychological Measurement 20(1):37--46. \doi{10.1177/001316446002000104}
-
 \bibitem[{D'Elia et~al.(2014)D'Elia, Stafford, Broadbent, and
   Kinsella}]{D'Elia2014}
 D'Elia D, Stafford RQ, Broadbent E, et~al (2014) {Effects of Robot
@@ -114,8 +110,10 @@ Robins B, Amirabdollahian F, Dautenhahn K, et~al (2012) {Therapeutic Robot for
 
 \bibitem[{Serengil and Ozpinar(2016)}]{Serengil2016}
 Serengil SI, Ozpinar A (2016) {DeepFace: Face Recognition via Deep Learning}.
-  2016 IEEE 15th International Symposium on Innovations in Intelligent Systems
-  and Applications (INISTA) pp 1--4. \doi{10.1109/INISTA.2016.7571428}
+  In: 2016 IEEE 15th International Symposium on Innovations in Intelligent
+  Systems and Applications (INISTA), pp 1--4,
+  \doi{10.1109/INISTA.2016.7571428}, library also supports emotion/expression
+  classification via facial feature extraction
 
 \bibitem[{Speer et~al.(2017)Speer, Chin, and Havasi}]{Speer2017}
 Speer R, Chin J, Havasi C (2017) {ConceptNet 5.5: An Open Multilingual Graph of
